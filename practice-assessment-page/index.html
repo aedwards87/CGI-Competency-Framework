@@ -1,0 +1,396 @@
+<div id="contentWrapper">
+  <!-- <div class="sectionWrapper">
+			<section>
+				<div class="row">
+					<div class="column m-span12 st-span12 lt-span12 f-span12 x-span12"> -->
+
+  <!-- Javascript  -->
+  <script type="text/javascript">
+    let currentPage = "Practice assessment";
+    let keyArea = "Practice";
+    let iconSVG = `<svg width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<title>Practice icon</title>
+<g clip-path="url(#clip0_516_2877)">
+<path d="M41.1563 33.3937L18.2971 39.5133C16.4958 39.996 14.6171 40.1192 12.7682 39.8757C10.9193 39.6323 9.13642 39.0271 7.52142 38.0947C5.90642 37.1623 4.4909 35.9209 3.35568 34.4413C2.22046 32.9618 1.38778 31.2732 0.905189 29.4719V29.4719C-2.4769 16.847 5.0121 3.87 17.6396 0.486619C19.4409 0.0039223 21.3196 -0.119242 23.1685 0.124158C25.0174 0.367559 26.8003 0.972757 28.4153 1.9052C30.0303 2.83764 31.4458 4.07906 32.581 5.55857C33.7162 7.03808 34.5489 8.72671 35.0315 10.528L41.1563 33.3937Z" fill="url(#paint0_linear_516_2877)"/>
+<path d="M17.4558 15.453L23.7502 15.453C23.8513 15.4449 23.9458 15.399 24.0146 15.3244C24.0835 15.2498 24.1217 15.152 24.1217 15.0505C24.1217 14.949 24.0835 14.8512 24.0146 14.7766C23.9458 14.702 23.8513 14.6561 23.7502 14.6479L17.4558 14.6479C17.3539 14.6562 17.2588 14.7024 17.1892 14.7774C17.1193 14.8522 17.0804 14.9507 17.0804 15.0531C17.0804 15.1554 17.1193 15.254 17.1892 15.3288C17.2596 15.4018 17.3546 15.4461 17.4558 15.453V15.453Z" fill="white"/>
+<path d="M23.7501 18.043L19.8749 18.043C19.773 18.0513 19.6778 18.0974 19.6083 18.1724C19.5384 18.2472 19.4995 18.3457 19.4995 18.4481C19.4995 18.5505 19.5384 18.649 19.6083 18.7238C19.6778 18.7988 19.773 18.8449 19.8749 18.8532L23.7501 18.8532C23.8513 18.8451 23.9457 18.7992 24.0146 18.7246C24.0834 18.65 24.1216 18.5522 24.1216 18.4507C24.1216 18.3492 24.0834 18.2514 24.0146 18.1768C23.9457 18.1022 23.8513 18.0563 23.7501 18.0481L23.7501 18.043Z" fill="white"/>
+<path d="M20.8444 21.4431L17.4558 21.4431C17.3539 21.4514 17.2588 21.4976 17.1892 21.5725C17.1193 21.6473 17.0804 21.7459 17.0804 21.8482C17.0804 21.9506 17.1193 22.0491 17.1892 22.1239C17.2588 22.1989 17.3539 22.2451 17.4558 22.2534L20.8444 22.2534C20.9463 22.2451 21.0414 22.1989 21.111 22.1239C21.1809 22.0491 21.2198 21.9506 21.2198 21.8482C21.2198 21.7459 21.1809 21.6473 21.111 21.5725C21.0414 21.4976 20.9463 21.4514 20.8444 21.4431V21.4431Z" fill="white"/>
+<path d="M27.4261 28.7032L26.2301 26.1236C26.3237 26.1106 26.4095 26.0647 26.4722 25.9941C26.5357 25.9229 26.5707 25.8307 26.5706 25.7353L26.5706 12.6172C26.5704 12.5645 26.5603 12.5122 26.5408 12.4632C26.5209 12.4146 26.4914 12.3706 26.4541 12.3338C26.4173 12.2959 26.3732 12.2659 26.3245 12.2457C26.2757 12.2254 26.2234 12.2153 26.1706 12.216L15.0394 12.216C14.9866 12.2153 14.9342 12.2254 14.8855 12.2457C14.8368 12.2659 14.7927 12.2959 14.7559 12.3338C14.7189 12.3709 14.6894 12.4148 14.6692 12.4632C14.6496 12.5122 14.6395 12.5645 14.6394 12.6172L14.6394 14.8849L10.1895 16.4704C10.1395 16.4884 10.0935 16.516 10.0542 16.5518C10.0148 16.5875 9.98296 16.6307 9.96035 16.6788C9.93775 16.7269 9.92486 16.779 9.92242 16.8321C9.91999 16.8852 9.92806 16.9382 9.94617 16.9882L14.3314 29.34C14.3501 29.3876 14.3773 29.4314 14.4116 29.4694C14.4485 29.5083 14.4924 29.5399 14.541 29.5626C14.5966 29.5896 14.6579 29.6029 14.7197 29.6014C14.7638 29.6011 14.8076 29.5932 14.8491 29.5781L23.6687 26.4213L25.2037 29.736C25.2671 29.876 25.3696 29.9947 25.4988 30.0777C25.6279 30.1607 25.7777 30.2056 25.9312 30.2072C26.0485 30.2073 26.1643 30.1812 26.2703 30.1308L27.0365 29.771C27.1317 29.7267 27.2171 29.6638 27.2876 29.5859C27.3934 29.4679 27.4621 29.3214 27.4851 29.1647C27.5081 29.0079 27.4845 28.8478 27.417 28.7045L27.4261 28.7032ZM15.4341 13.0185L25.7694 13.0185L25.7694 25.1308L24.3974 22.172C24.3703 22.1124 24.3369 22.056 24.2977 22.0037L23.1975 20.6447C23.0853 20.5045 22.9292 20.4061 22.7543 20.3653C22.5794 20.3244 22.3959 20.3436 22.2332 20.4195C22.0705 20.4955 21.938 20.624 21.857 20.7843C21.7761 20.9446 21.7513 21.1274 21.7867 21.3035L22.1219 23.0172C22.1345 23.0793 22.1545 23.1397 22.1815 23.1971L23.1639 25.3263L15.4341 25.3263L15.4341 13.0185ZM22.8248 22.4671L22.5737 21.1611L23.4098 22.1966L22.8248 22.4671ZM10.8367 17.093L14.6316 15.7391L14.6316 25.7327C14.6313 25.8392 14.6732 25.9415 14.7482 26.0172C14.8231 26.0929 14.9251 26.1358 15.0316 26.1365L22.1168 26.1365L14.9436 28.6928L10.8367 17.093ZM25.9324 29.4008L23.0655 23.2333L23.8305 22.8735L26.7 29.0397L25.9324 29.4008Z" fill="white"/>
+<path d="M38.9922 32.1383L17.8389 37.8062C16.2619 38.2288 14.6171 38.3366 12.9984 38.1235C11.3797 37.9104 9.81884 37.3806 8.40492 36.5642C6.99099 35.7479 5.75171 34.6611 4.75783 33.3658C3.76395 32.0705 3.03494 30.5921 2.61243 29.0151C1.111 23.4058 1.89888 17.4298 4.80282 12.4013C7.70675 7.37281 12.489 3.70354 18.0978 2.20041C21.2819 1.34669 24.6746 1.79254 27.53 3.43989C30.3854 5.08725 32.4696 7.80124 33.3243 10.985L38.9922 32.1383Z" stroke="white" stroke-opacity="0.08" stroke-width="3.53482"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_516_2877" x1="41.0955" y1="33.4053" x2="-5.23771" y2="6.54927" gradientUnits="userSpaceOnUse">
+<stop stop-color="#005BFF"/>
+<stop offset="1" stop-color="#004BD2"/>
+</linearGradient>
+<clipPath id="clip0_516_2877">
+<rect width="41.0626" height="40" fill="white" transform="translate(0.09375)"/>
+</clipPath>
+</defs>
+</svg>
+`;
+    const currentPageKeyArea = "Practice";
+  </script>
+  <script
+    src="/assets/js/js-competency-framework/assessment-page/questions.js?v=17"
+    type="module"
+  ></script>
+
+  <!-- Stylesheets / CSS -->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="/assets/css/css-competency-framework/assessment-page/style.css?v=20"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="/assets/css/css-competency-framework/reset-styles.css?v=14"
+  />
+
+  <!-- HTML -->
+  <div
+    class="sectionWrapper"
+    style="
+      --colorPagePrimary: var(--colorPractice);
+      --colorPagePrimary90l: var(--colorPractice90l);
+      --colorPagePrimary25l: var(--colorPractice25l);
+      --colorPageAccent: var(--colorPracticeAccent);
+      --colorHeading: var(--colorLight);
+      --colorText: var(--colorLight);
+    "
+  >
+    <section>
+      <div class="row">
+        <div class="column m-span12 st-span12 lt-span12 f-span12 x-span12">
+          <!---------------------- Main body start ----------------------->
+          <main class="cgi-container">
+            <div class="cgi-layout">
+              <button
+                class="cgi-button cgi-button__ghost cgi-button--small cgi-button--back"
+              >
+                <svg
+                  class="arrowSVG rotate-360"
+                  width="6"
+                  height="16"
+                  viewBox="0 0 10 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.49375 8L0.24707 2.75332L2.50039 0.5L10.0004 8L2.50039 15.5L0.24707 13.2467L5.49375 8Z"
+                    fill="var(--colorLight)"
+                  ></path>
+                </svg>
+                <span>Back</span>
+              </button>
+            </div>
+            <div
+              class="cgi-layout cgi-layout__main"
+              style="--maxWidth: var(--s750)"
+            >
+              <div class="cgi-assessment-tool">
+                <div class="cgi-assessment-tool__header">
+                  <svg
+                    width="42"
+                    height="40"
+                    viewBox="0 0 42 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Practice icon</title>
+                    <g clip-path="url(#clip0_516_2877)">
+                      <path
+                        d="M41.1563 33.3937L18.2971 39.5133C16.4958 39.996 14.6171 40.1192 12.7682 39.8757C10.9193 39.6323 9.13642 39.0271 7.52142 38.0947C5.90642 37.1623 4.4909 35.9209 3.35568 34.4413C2.22046 32.9618 1.38778 31.2732 0.905189 29.4719V29.4719C-2.4769 16.847 5.0121 3.87 17.6396 0.486619C19.4409 0.0039223 21.3196 -0.119242 23.1685 0.124158C25.0174 0.367559 26.8003 0.972757 28.4153 1.9052C30.0303 2.83764 31.4458 4.07906 32.581 5.55857C33.7162 7.03808 34.5489 8.72671 35.0315 10.528L41.1563 33.3937Z"
+                        fill="url(#paint0_linear_516_2877)"
+                      ></path>
+                      <path
+                        d="M17.4558 15.453L23.7502 15.453C23.8513 15.4449 23.9458 15.399 24.0146 15.3244C24.0835 15.2498 24.1217 15.152 24.1217 15.0505C24.1217 14.949 24.0835 14.8512 24.0146 14.7766C23.9458 14.702 23.8513 14.6561 23.7502 14.6479L17.4558 14.6479C17.3539 14.6562 17.2588 14.7024 17.1892 14.7774C17.1193 14.8522 17.0804 14.9507 17.0804 15.0531C17.0804 15.1554 17.1193 15.254 17.1892 15.3288C17.2596 15.4018 17.3546 15.4461 17.4558 15.453V15.453Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M23.7501 18.043L19.8749 18.043C19.773 18.0513 19.6778 18.0974 19.6083 18.1724C19.5384 18.2472 19.4995 18.3457 19.4995 18.4481C19.4995 18.5505 19.5384 18.649 19.6083 18.7238C19.6778 18.7988 19.773 18.8449 19.8749 18.8532L23.7501 18.8532C23.8513 18.8451 23.9457 18.7992 24.0146 18.7246C24.0834 18.65 24.1216 18.5522 24.1216 18.4507C24.1216 18.3492 24.0834 18.2514 24.0146 18.1768C23.9457 18.1022 23.8513 18.0563 23.7501 18.0481L23.7501 18.043Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M20.8444 21.4431L17.4558 21.4431C17.3539 21.4514 17.2588 21.4976 17.1892 21.5725C17.1193 21.6473 17.0804 21.7459 17.0804 21.8482C17.0804 21.9506 17.1193 22.0491 17.1892 22.1239C17.2588 22.1989 17.3539 22.2451 17.4558 22.2534L20.8444 22.2534C20.9463 22.2451 21.0414 22.1989 21.111 22.1239C21.1809 22.0491 21.2198 21.9506 21.2198 21.8482C21.2198 21.7459 21.1809 21.6473 21.111 21.5725C21.0414 21.4976 20.9463 21.4514 20.8444 21.4431V21.4431Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M27.4261 28.7032L26.2301 26.1236C26.3237 26.1106 26.4095 26.0647 26.4722 25.9941C26.5357 25.9229 26.5707 25.8307 26.5706 25.7353L26.5706 12.6172C26.5704 12.5645 26.5603 12.5122 26.5408 12.4632C26.5209 12.4146 26.4914 12.3706 26.4541 12.3338C26.4173 12.2959 26.3732 12.2659 26.3245 12.2457C26.2757 12.2254 26.2234 12.2153 26.1706 12.216L15.0394 12.216C14.9866 12.2153 14.9342 12.2254 14.8855 12.2457C14.8368 12.2659 14.7927 12.2959 14.7559 12.3338C14.7189 12.3709 14.6894 12.4148 14.6692 12.4632C14.6496 12.5122 14.6395 12.5645 14.6394 12.6172L14.6394 14.8849L10.1895 16.4704C10.1395 16.4884 10.0935 16.516 10.0542 16.5518C10.0148 16.5875 9.98296 16.6307 9.96035 16.6788C9.93775 16.7269 9.92486 16.779 9.92242 16.8321C9.91999 16.8852 9.92806 16.9382 9.94617 16.9882L14.3314 29.34C14.3501 29.3876 14.3773 29.4314 14.4116 29.4694C14.4485 29.5083 14.4924 29.5399 14.541 29.5626C14.5966 29.5896 14.6579 29.6029 14.7197 29.6014C14.7638 29.6011 14.8076 29.5932 14.8491 29.5781L23.6687 26.4213L25.2037 29.736C25.2671 29.876 25.3696 29.9947 25.4988 30.0777C25.6279 30.1607 25.7777 30.2056 25.9312 30.2072C26.0485 30.2073 26.1643 30.1812 26.2703 30.1308L27.0365 29.771C27.1317 29.7267 27.2171 29.6638 27.2876 29.5859C27.3934 29.4679 27.4621 29.3214 27.4851 29.1647C27.5081 29.0079 27.4845 28.8478 27.417 28.7045L27.4261 28.7032ZM15.4341 13.0185L25.7694 13.0185L25.7694 25.1308L24.3974 22.172C24.3703 22.1124 24.3369 22.056 24.2977 22.0037L23.1975 20.6447C23.0853 20.5045 22.9292 20.4061 22.7543 20.3653C22.5794 20.3244 22.3959 20.3436 22.2332 20.4195C22.0705 20.4955 21.938 20.624 21.857 20.7843C21.7761 20.9446 21.7513 21.1274 21.7867 21.3035L22.1219 23.0172C22.1345 23.0793 22.1545 23.1397 22.1815 23.1971L23.1639 25.3263L15.4341 25.3263L15.4341 13.0185ZM22.8248 22.4671L22.5737 21.1611L23.4098 22.1966L22.8248 22.4671ZM10.8367 17.093L14.6316 15.7391L14.6316 25.7327C14.6313 25.8392 14.6732 25.9415 14.7482 26.0172C14.8231 26.0929 14.9251 26.1358 15.0316 26.1365L22.1168 26.1365L14.9436 28.6928L10.8367 17.093ZM25.9324 29.4008L23.0655 23.2333L23.8305 22.8735L26.7 29.0397L25.9324 29.4008Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M38.9922 32.1383L17.8389 37.8062C16.2619 38.2288 14.6171 38.3366 12.9984 38.1235C11.3797 37.9104 9.81884 37.3806 8.40492 36.5642C6.99099 35.7479 5.75171 34.6611 4.75783 33.3658C3.76395 32.0705 3.03494 30.5921 2.61243 29.0151C1.111 23.4058 1.89888 17.4298 4.80282 12.4013C7.70675 7.37281 12.489 3.70354 18.0978 2.20041C21.2819 1.34669 24.6746 1.79254 27.53 3.43989C30.3854 5.08725 32.4696 7.80124 33.3243 10.985L38.9922 32.1383Z"
+                        stroke="white"
+                        stroke-opacity="0.08"
+                        stroke-width="3.53482"
+                      ></path>
+                    </g>
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_516_2877"
+                        x1="41.0955"
+                        y1="33.4053"
+                        x2="-5.23771"
+                        y2="6.54927"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#005BFF"></stop>
+                        <stop offset="1" stop-color="#004BD2"></stop>
+                      </linearGradient>
+                      <clipPath id="clip0_516_2877">
+                        <rect
+                          width="41.0626"
+                          height="40"
+                          fill="white"
+                          transform="translate(0.09375)"
+                        ></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <div class="cgi-grid" style="--yGap: var(--s6)">
+                    <h1
+                      class="cgi-heading cgi-heading__small-title"
+                      style="
+                        --colorText: var(--colorLight);
+
+                        letter-spacing: 0;
+                        font-weight: 500;
+                      "
+                    >
+                      Practice assessment
+                    </h1>
+                    <div class="cgi-progress-bar" role="progressbar">
+                      <span
+                        class="cgi-progress-bar__percentage"
+                        aria-valuenow="7.142857142857142"
+                        style="--width: 7.142857142857142%"
+                      ></span>
+                    </div>
+                    <p class="cgi-text cgi-progress-bar__text">
+                      <strong
+                        class="cgi-progress-bar__counter"
+                        style="font-size: var(--s14)"
+                        >1</strong
+                      >
+                      <span style="font-size: var(--s12)"> / 14 </span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cgi-assessment-tool__main">
+                  <fieldset
+                    class="cgi-survey cgi-grid"
+                    style="--yGap: var(--s32)"
+                  >
+                    <legend class="cgi-survey__caption">
+                      <h2 id="question" class="cgi-heading" data-key="1">
+                        How do you support the board and prepare for meetings?
+                      </h2>
+                    </legend>
+
+                    <p class="cgi-text cgi-text--flag">
+                      Please select the answer that is
+                      <strong
+                        class="cgi-underline"
+                        style="--colorUnderline: var(--colorPracticeAccent)"
+                        >most relevant</strong
+                      >
+                      to you
+                    </p>
+
+                    <ul
+                      class="cgi-list cgi-list--no-style cgi-grid"
+                      style="--yGap: var(--s20)"
+                    >
+                      <li>
+                        <div
+                          class="cgi-checkbox2"
+                          style="--xGap: var(--s28)"
+                          data-key="0"
+                          tabindex="0"
+                        >
+                          <input
+                            id="cb0"
+                            type="checkbox"
+                            class="cgi-checkbox2__input cgi-visually-hidden"
+                            aria-checked="false"
+                            tabindex="-1"
+                          />
+                          <label
+                            for="cb0"
+                            class="cgi-checkbox2__label cgi-checkbox2__label--border cgi-checkbox2__label--end"
+                          >
+                            <span
+                              class="cgi-checkbox2__mark cgi-checkbox2__mark--circle"
+                            ></span>
+                            <p class="cgi-text">
+                              This is not relevant to my role
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div
+                          class="cgi-checkbox2"
+                          style="--xGap: var(--s28)"
+                          data-key="2"
+                          tabindex="0"
+                        >
+                          <input
+                            id="cb1"
+                            type="checkbox"
+                            class="cgi-checkbox2__input cgi-visually-hidden"
+                            aria-checked="false"
+                            tabindex="-1"
+                          />
+                          <label
+                            for="cb1"
+                            class="cgi-checkbox2__label cgi-checkbox2__label--border cgi-checkbox2__label--end"
+                          >
+                            <span
+                              class="cgi-checkbox2__mark cgi-checkbox2__mark--circle"
+                            ></span>
+                            <p class="cgi-text">
+                              I plan the board schedule for the next period and
+                              work with others to ensure board packs are
+                              collated and circulated in advance of meetings,
+                              leading on administrative aspects of this task
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div
+                          class="cgi-checkbox2"
+                          style="--xGap: var(--s28)"
+                          data-key="1"
+                          tabindex="0"
+                        >
+                          <input
+                            id="cb2"
+                            type="checkbox"
+                            class="cgi-checkbox2__input cgi-visually-hidden"
+                            aria-checked="false"
+                            tabindex="-1"
+                          />
+                          <label
+                            for="cb2"
+                            class="cgi-checkbox2__label cgi-checkbox2__label--border cgi-checkbox2__label--end"
+                          >
+                            <span
+                              class="cgi-checkbox2__mark cgi-checkbox2__mark--circle"
+                            ></span>
+                            <p class="cgi-text">
+                              I support others in administrative tasks related
+                              to governance matters, such as collating board
+                              packs for meetings and maintaining records. I
+                              recognise the importance of scheduling meetings in
+                              advance and ensuring my actions deliver
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div
+                          class="cgi-checkbox2"
+                          style="--xGap: var(--s28)"
+                          data-key="3"
+                          tabindex="0"
+                        >
+                          <input
+                            id="cb3"
+                            type="checkbox"
+                            class="cgi-checkbox2__input cgi-visually-hidden"
+                            aria-checked="false"
+                            tabindex="-1"
+                          />
+                          <label
+                            for="cb3"
+                            class="cgi-checkbox2__label cgi-checkbox2__label--border cgi-checkbox2__label--end"
+                          >
+                            <span
+                              class="cgi-checkbox2__mark cgi-checkbox2__mark--circle"
+                            ></span>
+                            <p class="cgi-text">
+                              I plan the annual work cycle and board schedules,
+                              liaising with board members where appropriate and
+                              ensuring this is achievable and communicated. I
+                              take internal and external factors into
+                              consideration
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div
+                          class="cgi-checkbox2"
+                          style="--xGap: var(--s28)"
+                          data-key="4"
+                          tabindex="0"
+                        >
+                          <input
+                            id="cb4"
+                            type="checkbox"
+                            class="cgi-checkbox2__input cgi-visually-hidden"
+                            aria-checked="false"
+                            tabindex="-1"
+                          />
+                          <label
+                            for="cb4"
+                            class="cgi-checkbox2__label cgi-checkbox2__label--border cgi-checkbox2__label--end"
+                          >
+                            <span
+                              class="cgi-checkbox2__mark cgi-checkbox2__mark--circle"
+                            ></span>
+                            <p class="cgi-text">
+                              I set the long term planning and strategy for
+                              governance and oversight, and support others in
+                              their planning and prioritising to ensure a
+                              flexible and responsive governance function. I
+                              support the chair in reviewing board packs and
+                              their effective use in board meetings
+                            </p>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+
+                <div
+                  class="cgi-assessment-tool__footer"
+                  style="display: flex; gap: 24px; align-items: center"
+                >
+                  <button class="cgi-button cgi-button--large cgi-button--next">
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+          </main>
+          <!---------------------- Main body end ----------------------->
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Javascript -->
+  <script
+    src="/assets/js/js-competency-framework/assessment-page/script.js?v=10"
+    type="module"
+  ></script>
+
+  <!-- </div>
+									</div>
+								</section>
+							</div> -->
+</div>

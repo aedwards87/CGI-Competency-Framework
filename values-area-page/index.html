@@ -1,0 +1,877 @@
+<div id="contentWrapper">
+  <div class="sectionWrapper">
+    <section>
+      <div class="row">
+        <div class="column m-span12 st-span12 lt-span12 f-span12 x-span12">
+          <!-- Javascript  -->
+          <script type="text/javascript">
+            // JSON didn't like it being passed an SVG,
+            // So we pass as a variable then insert it
+            // into the pageData variable using Javascript
+            let pageData = {
+              title: "Values",
+              content:
+                "<p>These competencies demonstrate the values that <b>motivate and sustain<\/b> company secretaries and governance professionals and enable them to make distinctive contributions to their organisations and boards.<\/p>\r\n<p>Values play a big part in attracting people to the profession and helping them to succeed within it. They can be developed through <b>observation, experience, and practice<\/b>, and reinforced through <b>professional networks and peer learning<\/b>.<\/p>\r\n<p>The role of a company secretary or governance professional can be lonely at times, and a <b>reliable network<\/b> can prevent professional isolation and provide support, guidance, and inspiration, especially at times of significant change or crisis.<\/p>\r\n<p>Like the 'understanding' competencies, what changes as people progress are the <b>opportunities to apply<\/b> values in their organisations and the wider environment, which evolve with seniority and experience. The development of professional values is not detrimental to existing personal, family, community, or national values.<\/p>\r\n<p><\/p>\r\n<h3>The CGIUKI Code of Professional Ethics and Conduct<\/h3>\r\n<p>Many of these competencies and the behaviours that express them are described in the <a href=\"join-us\/chartered-membership\/code-of-ethics\">Code of Professional Ethics and Conduct<\/a>.<\/p>",
+              subHeadlineContent:
+                "The values that underpin effective governance.",
+              accordion: [
+                {
+                  title: "Integrity",
+                  text: "<p><strong>Those who act ethically will show an understanding of:<\/strong><\/p>\r\n<ul>\r\n<li>\r\n<p><b>the meaning of integrity: <\/b>the quality of being honest and having strong moral principles<\/p>\r\n<\/li>\r\n<li>\r\n<p><b>professional ethics<\/b>: standards of conduct and values in respect of the organisation, the governance profession and all related activities<\/p>\r\n<\/li>\r\n<li>\r\n<p><b>recognising and limiting bias:&nbsp;<\/b>incorporating equality, diversity and inclusion<\/p>\r\n<\/li>\r\n<li>\r\n<p><b>the identification and management of conflicts of interest<\/b>: both one&rsquo;s own and others&rsquo;.<\/p>\r\n<\/li>\r\n<\/ul>",
+                },
+                {
+                  title: "Independence",
+                  text: "<p><strong>Those who act independently will show an understanding of:<\/strong><\/p>\r\n<ul>\r\n<li>\r\n<p>when and how to take an <b>independent stance<\/b> in contrast with that of others<\/p>\r\n<\/li>\r\n<li>\r\n<p><b>how to communicate <\/b>and when to maintain and promote alternative opinions<\/p>\r\n<\/li>\r\n<li>\r\n<p>when and <b>how to challenge the status quo<\/b>, including when it is not beneficial<\/p>\r\n<\/li>\r\n<li>\r\n<p>when and in what context and environment <b>discretion<\/b> is required.<\/p>\r\n<\/li>\r\n<\/ul>",
+                },
+                {
+                  title: "Open-minded",
+                  text: "<p><strong>Those who are open-minded will show an understanding of:<\/strong><\/p>\r\n<ul>\r\n<li>\r\n<p>how<b> the <\/b>promotion of<b> <\/b>alternative views and opinions generates a <b>diversity of thinking and discussion<\/b> to the benefit of the organisation<\/p>\r\n<\/li>\r\n<li>\r\n<p>a <b>learning culture for themself and the organisation<\/b>, learning from successes and mistakes, encouraging continuous sharing of knowledge alongside formal and informal training<\/p>\r\n<\/li>\r\n<li>\r\n<p>working flexibly within their role and in interactions with others to maintain focus on deliverables and a <b>positive work environment<\/b><\/p>\r\n<\/li>\r\n<\/ul>\r\n<ul>\r\n<li>\r\n<p><b>promoting governance as an enabler and collaborating with and embedding into the values and culture of an organisation as well as the values of the role holder<\/b><\/p>\r\n<\/li>\r\n<li>\r\n<p>working pro-actively within <b>teams of colleagues<\/b> that benefit the organisation and deliver effective outcomes.<\/p>\r\n<\/li>\r\n<\/ul>",
+                },
+                {
+                  title: "Emotional intelligence",
+                  text: "<p><strong>Those who act with emotional intelligence show an understanding of:<\/strong><\/p>\r\n<ul>\r\n<li>\r\n<p>the application of alternative responses to reflect environments and situations demonstrating <b>emotional self-awareness and self-control<\/b><\/p>\r\n<\/li>\r\n<li>\r\n<p>their own and others&rsquo;<b> biases and pre-conceptions <\/b>and how to adapt situations and environments to limit their impact<\/p>\r\n<\/li>\r\n<li>\r\n<p>how to show <b>empathy, sensitivity and perceptiveness<\/b> in a professional environment<\/p>\r\n<\/li>\r\n<li>\r\n<p><b>building relationships<\/b> with and working alongside colleagues, especially those with differing personalities, views, backgrounds, experiences and attitudes<\/p>\r\n<\/li>\r\n<li>\r\n<p>the benefit of investing in their own learning to maintain and develop their <b>contribution and effectiveness<\/b>.<\/p>\r\n<\/li>\r\n<\/ul>",
+                },
+                {
+                  title: "",
+                  text: "",
+                },
+                {
+                  title: "",
+                  text: "",
+                },
+                {
+                  title: "",
+                  text: "",
+                },
+                {
+                  title: "",
+                  text: "",
+                },
+              ],
+            };
+            let iconSVG = `<svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<title>Values icon</title>
+<path d="M19.424 0L34.725 15.3009C39.7952 20.3713 39.7952 28.5919 34.725 33.6621C26.2745 42.1126 12.5735 42.1126 4.12303 33.6621C-0.947261 28.5919 -0.947261 20.3713 4.12303 15.3009L19.424 0Z" fill="url(#paint0_linear_510_2916)"/>
+<path d="M26.2522 23.5286L25.1694 21.4366V20.369C25.1651 15.8623 22.1484 13.8462 19.1576 13.8462C14.363 13.8462 12.5786 17.6729 12.5786 20.0853C12.5786 22.9526 13.7221 24.226 14.6164 25.2502C15.2358 25.9475 15.7252 26.502 15.7252 27.3942V29.7288C15.7253 29.8032 15.74 29.8769 15.7686 29.9457C15.7972 30.0145 15.8391 30.0768 15.8919 30.1294C16 30.2358 16.1453 30.2955 16.2969 30.2961H21.1609C21.3125 30.2955 21.4578 30.2358 21.5658 30.1294C21.6186 30.0768 21.6606 30.0145 21.6891 29.9457C21.7178 29.8769 21.7326 29.8032 21.7326 29.7288V27.4592H24.0216C24.2486 27.4588 24.4663 27.3693 24.628 27.2102C24.7077 27.1315 24.771 27.0377 24.814 26.9343C24.8572 26.831 24.8794 26.7201 24.8793 26.6081V24.5702L25.8494 24.3407C25.9802 24.3145 26.098 24.2435 26.1821 24.1399C26.2663 24.0364 26.3118 23.9068 26.3106 23.7733C26.3087 23.6886 26.2889 23.6051 26.2522 23.5286ZM24.7645 24.0246C24.6344 24.0524 24.5177 24.1234 24.4331 24.226C24.3494 24.3293 24.305 24.459 24.3075 24.5919V26.6168C24.3075 26.6542 24.3001 26.6912 24.2858 26.7258C24.2713 26.7603 24.2502 26.7918 24.2236 26.8181C24.1971 26.8445 24.1655 26.8653 24.1308 26.8795C24.0962 26.8936 24.0591 26.9007 24.0216 26.9004H20.8751C20.415 26.9022 19.9625 26.7849 19.5613 26.5599C19.1602 26.3348 18.8241 26.0097 18.5859 25.6163L18.2654 25.0488C18.2469 25.0164 18.2219 24.988 18.1922 24.9654C18.1624 24.9427 18.1284 24.9262 18.0922 24.9168C18.019 24.8968 17.9408 24.9065 17.8748 24.9437C17.8086 24.9811 17.76 25.043 17.7393 25.116C17.725 25.1874 17.7381 25.2617 17.7761 25.3239L18.0966 25.8913C18.3864 26.3709 18.7954 26.7672 19.2838 27.042C19.7722 27.3167 20.3233 27.4605 20.8837 27.4592H21.1695V29.7288H16.2969V27.3942C16.2969 26.2875 15.6884 25.6033 15.0452 24.8756C14.1573 23.8751 13.1503 22.7403 13.1503 20.0853C13.1503 18.6105 14.2547 14.4135 19.1576 14.4135C21.6634 14.4135 24.5933 15.9728 24.5933 20.369V21.5038C24.5933 21.5488 24.6037 21.5933 24.6236 21.6338L25.7368 23.7733L24.7645 24.0246Z" fill="white" stroke="white" stroke-width="0.0987168" stroke-linejoin="round"/>
+<path d="M23.1617 19.4508C23.0909 18.4204 22.6457 17.4514 21.9101 16.7265C21.1708 15.9978 20.1935 15.5602 19.1575 15.4942V15.4813C19.1577 15.4439 19.1506 15.4069 19.1364 15.3723C19.1224 15.3378 19.1015 15.3064 19.0753 15.2799C19.0214 15.2272 18.9491 15.1978 18.8738 15.1978C18.7986 15.1978 18.7263 15.2272 18.6724 15.2799C18.6458 15.3062 18.6246 15.3375 18.61 15.3721C18.5956 15.4066 18.588 15.4438 18.588 15.4813V15.4942C17.5546 15.564 16.5809 16.003 15.8442 16.7308C15.1111 17.4555 14.6668 18.4224 14.5946 19.4508H14.5816C14.5053 19.4508 14.432 19.4812 14.378 19.5353C14.3518 19.5614 14.3309 19.5924 14.3167 19.6266C14.3027 19.6608 14.2956 19.6975 14.2958 19.7345C14.2954 19.7719 14.3025 19.8089 14.3167 19.8435C14.3308 19.8781 14.3516 19.9095 14.378 19.9359C14.4049 19.9623 14.4367 19.9833 14.4717 19.9973C14.5066 20.0115 14.544 20.0185 14.5816 20.0182H14.5946C14.6627 21.0488 15.1047 22.0191 15.8377 22.7468C16.574 23.4787 17.5499 23.9201 18.5858 23.9899C18.5857 24.0271 18.5931 24.0639 18.6077 24.0982C18.6221 24.1324 18.6434 24.1634 18.6703 24.1891C18.6966 24.216 18.7278 24.2373 18.7625 24.252C18.797 24.2665 18.8342 24.274 18.8717 24.274C18.9092 24.274 18.9464 24.2665 18.9809 24.252C19.0155 24.2373 19.0469 24.216 19.0731 24.1891C19.0999 24.1634 19.1212 24.1324 19.1357 24.0982C19.1503 24.0639 19.1576 24.0271 19.1575 23.9899C20.1955 23.9238 21.1747 23.4846 21.9144 22.7534C22.6505 22.0247 23.0941 21.0517 23.1617 20.0182C23.1993 20.0188 23.2367 20.0119 23.2716 19.9978C23.3066 19.9839 23.3384 19.963 23.3651 19.9366C23.392 19.9102 23.4133 19.8788 23.4277 19.8441C23.4423 19.8094 23.4498 19.7721 23.4498 19.7345C23.4496 19.6973 23.4422 19.6607 23.4276 19.6263C23.4131 19.5921 23.3919 19.5612 23.3654 19.5353C23.3386 19.5085 23.3069 19.4872 23.272 19.4726C23.2371 19.4582 23.1996 19.4507 23.1617 19.4508ZM19.1575 23.4225C19.1575 23.3851 19.1499 23.3479 19.1355 23.3134C19.1209 23.2788 19.0998 23.2474 19.0731 23.2212C19.0193 23.1685 18.947 23.139 18.8717 23.139C18.7964 23.139 18.7241 23.1685 18.6703 23.2212C18.6437 23.2474 18.6224 23.2788 18.6079 23.3134C18.5934 23.3479 18.5859 23.3851 18.5858 23.4225C17.6989 23.3574 16.8642 22.978 16.2318 22.3528C15.6018 21.7301 15.2173 20.9013 15.1491 20.0182C15.1865 20.0185 15.2236 20.0113 15.2583 19.9972C15.293 19.9831 15.3244 19.9623 15.3511 19.9359C15.3776 19.9095 15.3986 19.8782 15.4131 19.8436C15.4275 19.8091 15.4349 19.7719 15.4349 19.7345C15.4347 19.6973 15.4273 19.6607 15.4127 19.6263C15.3982 19.5921 15.3771 19.5612 15.3505 19.5353C15.3241 19.5086 15.2927 19.4874 15.2582 19.4728C15.2236 19.4584 15.1866 19.4509 15.1491 19.4508C15.2164 18.5681 15.601 17.7396 16.2318 17.1185C16.8636 16.4923 17.6987 16.1129 18.5858 16.0487C18.5857 16.0858 18.5931 16.1227 18.6077 16.1569C18.6221 16.1911 18.6434 16.2221 18.6703 16.2479C18.6966 16.2747 18.7278 16.2961 18.7625 16.3107C18.797 16.3252 18.8342 16.3327 18.8717 16.3327C18.9092 16.3327 18.9464 16.3252 18.9809 16.3107C19.0155 16.2961 19.0469 16.2747 19.0731 16.2479C19.0999 16.2221 19.1212 16.1911 19.1357 16.1569C19.1503 16.1227 19.1576 16.0858 19.1575 16.0487C20.0447 16.1129 20.8797 16.4923 21.5116 17.1185C22.1424 17.7396 22.527 18.5681 22.5944 19.4508C22.5568 19.4509 22.5198 19.4584 22.4852 19.4728C22.4507 19.4874 22.4193 19.5086 22.3929 19.5353C22.3663 19.5612 22.3451 19.5921 22.3307 19.6263C22.3161 19.6607 22.3087 19.6973 22.3086 19.7345C22.3086 19.7719 22.3159 19.8091 22.3303 19.8436C22.3447 19.8782 22.3658 19.9095 22.3923 19.9359C22.419 19.9623 22.4505 19.9831 22.4851 19.9972C22.5198 20.0113 22.557 20.0185 22.5944 20.0182C22.526 20.9013 22.1416 21.7301 21.5116 22.3528C20.8792 22.978 20.0445 23.3574 19.1575 23.4225Z" fill="white" stroke="white" stroke-width="0.0987168" stroke-linejoin="round"/>
+<path d="M19.725 17.7443C19.4077 17.7306 19.0973 17.8401 18.8587 18.0496C18.6201 17.8401 18.3098 17.7306 17.9925 17.7443C17.6142 17.7444 17.2511 17.893 16.9812 18.1579C16.8484 18.2891 16.7429 18.4452 16.6709 18.6172C16.5988 18.7894 16.5614 18.974 16.561 19.1605C16.561 19.8103 16.9357 20.7783 18.7266 21.6943C18.7675 21.7156 18.8128 21.7267 18.8587 21.7267C18.9047 21.7267 18.9501 21.7156 18.9908 21.6943C20.7732 20.7674 21.1565 19.7995 21.1565 19.1605C21.156 18.974 21.1187 18.7894 21.0465 18.6172C20.9745 18.4452 20.869 18.2891 20.7364 18.1579C20.4669 17.8921 20.1034 17.7435 19.725 17.7443ZM18.8587 21.1097C17.7521 20.5141 17.1414 19.8103 17.1414 19.1605C17.1458 18.9357 17.2374 18.7214 17.3969 18.5629C17.5584 18.4041 17.7747 18.3134 18.0012 18.3095C18.12 18.2978 18.2396 18.3212 18.3454 18.3766C18.4549 18.4265 18.547 18.508 18.6097 18.6106C18.6234 18.645 18.6439 18.6764 18.6699 18.7028C18.696 18.7292 18.727 18.7501 18.7613 18.7643C18.8307 18.793 18.9085 18.793 18.9779 18.7643C19.0134 18.7498 19.0458 18.7285 19.0731 18.7015C19.0999 18.674 19.1212 18.6416 19.136 18.6062C19.1969 18.5075 19.2846 18.4281 19.3889 18.3771C19.4931 18.3262 19.6096 18.3057 19.725 18.3182C19.9517 18.3182 20.1695 18.407 20.3315 18.5657C20.4934 18.7244 20.5867 18.9404 20.5911 19.1671C20.5911 19.8254 19.9784 20.5206 18.8717 21.1162L18.8587 21.1097Z" fill="white" stroke="white" stroke-width="0.0987168" stroke-linejoin="round"/>
+<path d="M20.0152 18.8833C19.9777 18.8833 19.9406 18.8909 19.9061 18.9053C19.8714 18.9199 19.8402 18.9411 19.8138 18.9677C19.7871 18.9936 19.766 19.0246 19.7515 19.0588C19.737 19.093 19.7294 19.1298 19.7293 19.167C19.7293 19.3598 19.5127 19.7062 18.9129 20.109C18.8617 20.1426 18.823 20.1921 18.8024 20.2497C18.783 20.3074 18.783 20.3697 18.8024 20.4274C18.8197 20.4861 18.8564 20.5372 18.9064 20.5725C18.9558 20.6093 19.0159 20.629 19.0774 20.6288C19.1344 20.6283 19.1899 20.6119 19.2377 20.5811C19.9372 20.1004 20.3075 19.6132 20.3075 19.167C20.3074 19.1298 20.2999 19.093 20.2854 19.0588C20.2708 19.0246 20.2498 18.9936 20.2231 18.9677C20.1958 18.9405 20.1634 18.919 20.1277 18.9044C20.092 18.89 20.0538 18.8827 20.0152 18.8833Z" fill="white" stroke="white" stroke-width="0.0987168" stroke-linejoin="round"/>
+<path d="M19.424 2.28516L33.5825 16.4436C38.0219 20.883 38.0219 28.0806 33.5825 32.5198C25.763 40.3393 13.0851 40.3393 5.26553 32.5198C0.826204 28.0806 0.826204 20.883 5.26553 16.4436L19.424 2.28516Z" stroke="white" stroke-opacity="0.08" stroke-width="3.2314"/>
+<defs>
+<linearGradient id="paint0_linear_510_2916" x1="19.3835" y1="0.0405087" x2="19.2137" y2="48.9194" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6200DC"/>
+<stop offset="1" stop-color="#440099"/>
+</linearGradient>
+</defs>
+</svg>
+`;
+            pageData = { ...pageData, iconSVG };
+          </script>
+
+          <!-- Stylesheets / CSS -->
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="/assets/css/css-competency-framework/global-styles.css?v=14"
+          />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="/assets/css/css-competency-framework/reset-styles.css?v=20"
+          />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="/assets/css/css-competency-framework/area-page/styles.css?v=18"
+          />
+
+          <!-- HTML -->
+          <main
+            class="cf-page__colors"
+            style="
+              --colorPagePrimary: var(--colorValues);
+              --colorPagePrimary90l: var(--colorValues90l);
+              --colorPagePrimary25l: var(--colorValues25l);
+            "
+          >
+            <!---------------------- Breadcumbs ---------------------->
+            <div class="cf-breadcrumb">
+              <a
+                href="professional-development/competency-framework"
+                class="cf-breadcrumb__previous-page"
+                >Competency Framework</a
+              >
+              <span>/</span>
+              <span class="cf-breadcrumb__current-page">Values</span>
+            </div>
+
+            <!--------------------- Main body start ---------------------->
+            <div class="cf-container cf-container--y-start values">
+              <!------------------- Content column start ------------------->
+              <div class="cf-layout">
+                <!-- Heading -->
+                <div class="cf-heading">
+                  <svg
+                    width="39"
+                    height="40"
+                    viewBox="0 0 39 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Values icon</title>
+                    <path
+                      d="M19.424 0L34.725 15.3009C39.7952 20.3713 39.7952 28.5919 34.725 33.6621C26.2745 42.1126 12.5735 42.1126 4.12303 33.6621C-0.947261 28.5919 -0.947261 20.3713 4.12303 15.3009L19.424 0Z"
+                      fill="url(#paint0_linear_510_2916)"
+                    ></path>
+                    <path
+                      d="M26.2522 23.5286L25.1694 21.4366V20.369C25.1651 15.8623 22.1484 13.8462 19.1576 13.8462C14.363 13.8462 12.5786 17.6729 12.5786 20.0853C12.5786 22.9526 13.7221 24.226 14.6164 25.2502C15.2358 25.9475 15.7252 26.502 15.7252 27.3942V29.7288C15.7253 29.8032 15.74 29.8769 15.7686 29.9457C15.7972 30.0145 15.8391 30.0768 15.8919 30.1294C16 30.2358 16.1453 30.2955 16.2969 30.2961H21.1609C21.3125 30.2955 21.4578 30.2358 21.5658 30.1294C21.6186 30.0768 21.6606 30.0145 21.6891 29.9457C21.7178 29.8769 21.7326 29.8032 21.7326 29.7288V27.4592H24.0216C24.2486 27.4588 24.4663 27.3693 24.628 27.2102C24.7077 27.1315 24.771 27.0377 24.814 26.9343C24.8572 26.831 24.8794 26.7201 24.8793 26.6081V24.5702L25.8494 24.3407C25.9802 24.3145 26.098 24.2435 26.1821 24.1399C26.2663 24.0364 26.3118 23.9068 26.3106 23.7733C26.3087 23.6886 26.2889 23.6051 26.2522 23.5286ZM24.7645 24.0246C24.6344 24.0524 24.5177 24.1234 24.4331 24.226C24.3494 24.3293 24.305 24.459 24.3075 24.5919V26.6168C24.3075 26.6542 24.3001 26.6912 24.2858 26.7258C24.2713 26.7603 24.2502 26.7918 24.2236 26.8181C24.1971 26.8445 24.1655 26.8653 24.1308 26.8795C24.0962 26.8936 24.0591 26.9007 24.0216 26.9004H20.8751C20.415 26.9022 19.9625 26.7849 19.5613 26.5599C19.1602 26.3348 18.8241 26.0097 18.5859 25.6163L18.2654 25.0488C18.2469 25.0164 18.2219 24.988 18.1922 24.9654C18.1624 24.9427 18.1284 24.9262 18.0922 24.9168C18.019 24.8968 17.9408 24.9065 17.8748 24.9437C17.8086 24.9811 17.76 25.043 17.7393 25.116C17.725 25.1874 17.7381 25.2617 17.7761 25.3239L18.0966 25.8913C18.3864 26.3709 18.7954 26.7672 19.2838 27.042C19.7722 27.3167 20.3233 27.4605 20.8837 27.4592H21.1695V29.7288H16.2969V27.3942C16.2969 26.2875 15.6884 25.6033 15.0452 24.8756C14.1573 23.8751 13.1503 22.7403 13.1503 20.0853C13.1503 18.6105 14.2547 14.4135 19.1576 14.4135C21.6634 14.4135 24.5933 15.9728 24.5933 20.369V21.5038C24.5933 21.5488 24.6037 21.5933 24.6236 21.6338L25.7368 23.7733L24.7645 24.0246Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-width="0.0987168"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M23.1617 19.4508C23.0909 18.4204 22.6457 17.4514 21.9101 16.7265C21.1708 15.9978 20.1935 15.5602 19.1575 15.4942V15.4813C19.1577 15.4439 19.1506 15.4069 19.1364 15.3723C19.1224 15.3378 19.1015 15.3064 19.0753 15.2799C19.0214 15.2272 18.9491 15.1978 18.8738 15.1978C18.7986 15.1978 18.7263 15.2272 18.6724 15.2799C18.6458 15.3062 18.6246 15.3375 18.61 15.3721C18.5956 15.4066 18.588 15.4438 18.588 15.4813V15.4942C17.5546 15.564 16.5809 16.003 15.8442 16.7308C15.1111 17.4555 14.6668 18.4224 14.5946 19.4508H14.5816C14.5053 19.4508 14.432 19.4812 14.378 19.5353C14.3518 19.5614 14.3309 19.5924 14.3167 19.6266C14.3027 19.6608 14.2956 19.6975 14.2958 19.7345C14.2954 19.7719 14.3025 19.8089 14.3167 19.8435C14.3308 19.8781 14.3516 19.9095 14.378 19.9359C14.4049 19.9623 14.4367 19.9833 14.4717 19.9973C14.5066 20.0115 14.544 20.0185 14.5816 20.0182H14.5946C14.6627 21.0488 15.1047 22.0191 15.8377 22.7468C16.574 23.4787 17.5499 23.9201 18.5858 23.9899C18.5857 24.0271 18.5931 24.0639 18.6077 24.0982C18.6221 24.1324 18.6434 24.1634 18.6703 24.1891C18.6966 24.216 18.7278 24.2373 18.7625 24.252C18.797 24.2665 18.8342 24.274 18.8717 24.274C18.9092 24.274 18.9464 24.2665 18.9809 24.252C19.0155 24.2373 19.0469 24.216 19.0731 24.1891C19.0999 24.1634 19.1212 24.1324 19.1357 24.0982C19.1503 24.0639 19.1576 24.0271 19.1575 23.9899C20.1955 23.9238 21.1747 23.4846 21.9144 22.7534C22.6505 22.0247 23.0941 21.0517 23.1617 20.0182C23.1993 20.0188 23.2367 20.0119 23.2716 19.9978C23.3066 19.9839 23.3384 19.963 23.3651 19.9366C23.392 19.9102 23.4133 19.8788 23.4277 19.8441C23.4423 19.8094 23.4498 19.7721 23.4498 19.7345C23.4496 19.6973 23.4422 19.6607 23.4276 19.6263C23.4131 19.5921 23.3919 19.5612 23.3654 19.5353C23.3386 19.5085 23.3069 19.4872 23.272 19.4726C23.2371 19.4582 23.1996 19.4507 23.1617 19.4508ZM19.1575 23.4225C19.1575 23.3851 19.1499 23.3479 19.1355 23.3134C19.1209 23.2788 19.0998 23.2474 19.0731 23.2212C19.0193 23.1685 18.947 23.139 18.8717 23.139C18.7964 23.139 18.7241 23.1685 18.6703 23.2212C18.6437 23.2474 18.6224 23.2788 18.6079 23.3134C18.5934 23.3479 18.5859 23.3851 18.5858 23.4225C17.6989 23.3574 16.8642 22.978 16.2318 22.3528C15.6018 21.7301 15.2173 20.9013 15.1491 20.0182C15.1865 20.0185 15.2236 20.0113 15.2583 19.9972C15.293 19.9831 15.3244 19.9623 15.3511 19.9359C15.3776 19.9095 15.3986 19.8782 15.4131 19.8436C15.4275 19.8091 15.4349 19.7719 15.4349 19.7345C15.4347 19.6973 15.4273 19.6607 15.4127 19.6263C15.3982 19.5921 15.3771 19.5612 15.3505 19.5353C15.3241 19.5086 15.2927 19.4874 15.2582 19.4728C15.2236 19.4584 15.1866 19.4509 15.1491 19.4508C15.2164 18.5681 15.601 17.7396 16.2318 17.1185C16.8636 16.4923 17.6987 16.1129 18.5858 16.0487C18.5857 16.0858 18.5931 16.1227 18.6077 16.1569C18.6221 16.1911 18.6434 16.2221 18.6703 16.2479C18.6966 16.2747 18.7278 16.2961 18.7625 16.3107C18.797 16.3252 18.8342 16.3327 18.8717 16.3327C18.9092 16.3327 18.9464 16.3252 18.9809 16.3107C19.0155 16.2961 19.0469 16.2747 19.0731 16.2479C19.0999 16.2221 19.1212 16.1911 19.1357 16.1569C19.1503 16.1227 19.1576 16.0858 19.1575 16.0487C20.0447 16.1129 20.8797 16.4923 21.5116 17.1185C22.1424 17.7396 22.527 18.5681 22.5944 19.4508C22.5568 19.4509 22.5198 19.4584 22.4852 19.4728C22.4507 19.4874 22.4193 19.5086 22.3929 19.5353C22.3663 19.5612 22.3451 19.5921 22.3307 19.6263C22.3161 19.6607 22.3087 19.6973 22.3086 19.7345C22.3086 19.7719 22.3159 19.8091 22.3303 19.8436C22.3447 19.8782 22.3658 19.9095 22.3923 19.9359C22.419 19.9623 22.4505 19.9831 22.4851 19.9972C22.5198 20.0113 22.557 20.0185 22.5944 20.0182C22.526 20.9013 22.1416 21.7301 21.5116 22.3528C20.8792 22.978 20.0445 23.3574 19.1575 23.4225Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-width="0.0987168"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M19.725 17.7443C19.4077 17.7306 19.0973 17.8401 18.8587 18.0496C18.6201 17.8401 18.3098 17.7306 17.9925 17.7443C17.6142 17.7444 17.2511 17.893 16.9812 18.1579C16.8484 18.2891 16.7429 18.4452 16.6709 18.6172C16.5988 18.7894 16.5614 18.974 16.561 19.1605C16.561 19.8103 16.9357 20.7783 18.7266 21.6943C18.7675 21.7156 18.8128 21.7267 18.8587 21.7267C18.9047 21.7267 18.9501 21.7156 18.9908 21.6943C20.7732 20.7674 21.1565 19.7995 21.1565 19.1605C21.156 18.974 21.1187 18.7894 21.0465 18.6172C20.9745 18.4452 20.869 18.2891 20.7364 18.1579C20.4669 17.8921 20.1034 17.7435 19.725 17.7443ZM18.8587 21.1097C17.7521 20.5141 17.1414 19.8103 17.1414 19.1605C17.1458 18.9357 17.2374 18.7214 17.3969 18.5629C17.5584 18.4041 17.7747 18.3134 18.0012 18.3095C18.12 18.2978 18.2396 18.3212 18.3454 18.3766C18.4549 18.4265 18.547 18.508 18.6097 18.6106C18.6234 18.645 18.6439 18.6764 18.6699 18.7028C18.696 18.7292 18.727 18.7501 18.7613 18.7643C18.8307 18.793 18.9085 18.793 18.9779 18.7643C19.0134 18.7498 19.0458 18.7285 19.0731 18.7015C19.0999 18.674 19.1212 18.6416 19.136 18.6062C19.1969 18.5075 19.2846 18.4281 19.3889 18.3771C19.4931 18.3262 19.6096 18.3057 19.725 18.3182C19.9517 18.3182 20.1695 18.407 20.3315 18.5657C20.4934 18.7244 20.5867 18.9404 20.5911 19.1671C20.5911 19.8254 19.9784 20.5206 18.8717 21.1162L18.8587 21.1097Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-width="0.0987168"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M20.0152 18.8833C19.9777 18.8833 19.9406 18.8909 19.9061 18.9053C19.8714 18.9199 19.8402 18.9411 19.8138 18.9677C19.7871 18.9936 19.766 19.0246 19.7515 19.0588C19.737 19.093 19.7294 19.1298 19.7293 19.167C19.7293 19.3598 19.5127 19.7062 18.9129 20.109C18.8617 20.1426 18.823 20.1921 18.8024 20.2497C18.783 20.3074 18.783 20.3697 18.8024 20.4274C18.8197 20.4861 18.8564 20.5372 18.9064 20.5725C18.9558 20.6093 19.0159 20.629 19.0774 20.6288C19.1344 20.6283 19.1899 20.6119 19.2377 20.5811C19.9372 20.1004 20.3075 19.6132 20.3075 19.167C20.3074 19.1298 20.2999 19.093 20.2854 19.0588C20.2708 19.0246 20.2498 18.9936 20.2231 18.9677C20.1958 18.9405 20.1634 18.919 20.1277 18.9044C20.092 18.89 20.0538 18.8827 20.0152 18.8833Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-width="0.0987168"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M19.424 2.28516L33.5825 16.4436C38.0219 20.883 38.0219 28.0806 33.5825 32.5198C25.763 40.3393 13.0851 40.3393 5.26553 32.5198C0.826204 28.0806 0.826204 20.883 5.26553 16.4436L19.424 2.28516Z"
+                      stroke="white"
+                      stroke-opacity="0.08"
+                      stroke-width="3.2314"
+                    ></path>
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_510_2916"
+                        x1="19.3835"
+                        y1="0.0405087"
+                        x2="19.2137"
+                        y2="48.9194"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#6200DC"></stop>
+                        <stop offset="1" stop-color="#440099"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <h1 class="cf-heading__small-title caps">Values</h1>
+                  <h2 class="cf-heading__hero-title">What I believe</h2>
+                </div>
+
+                <!-- Main content -->
+                <div class="cf-content">
+                  <!-- Highligthed subheadline -->
+                  <div class="cf-content__sub-headline">
+                    <p>The values that underpin effective governance.</p>
+                  </div>
+
+                  <!-- Content start -->
+                  <div class="cf-content__text">
+                    <p>
+                      These competencies demonstrate the values that
+                      <b>motivate and sustain</b> company secretaries and
+                      governance professionals and enable them to make
+                      distinctive contributions to their organisations and
+                      boards.
+                    </p>
+                    <p>
+                      Values play a big part in attracting people to the
+                      profession and helping them to succeed within it. They can
+                      be developed through
+                      <b>observation, experience, and practice</b>, and
+                      reinforced through
+                      <b>professional networks and peer learning</b>.
+                    </p>
+                    <p>
+                      The role of a company secretary or governance professional
+                      can be lonely at times, and a <b>reliable network</b> can
+                      prevent professional isolation and provide support,
+                      guidance, and inspiration, especially at times of
+                      significant change or crisis.
+                    </p>
+                    <p>
+                      Like the 'understanding' competencies, what changes as
+                      people progress are the
+                      <b>opportunities to apply</b> values in their
+                      organisations and the wider environment, which evolve with
+                      seniority and experience. The development of professional
+                      values is not detrimental to existing personal, family,
+                      community, or national values.
+                    </p>
+                    <p></p>
+                    <h3>The CGIUKI Code of Professional Ethics and Conduct</h3>
+                    <p>
+                      Many of these competencies and the behaviours that express
+                      them are described in the
+                      <a href="join-us/chartered-membership/code-of-ethics"
+                        >Code of Professional Ethics and Conduct</a
+                      >.
+                    </p>
+                  </div>
+
+                  <!-- Accordion -->
+                  <div class="cf-accordion">
+                    <div class="cf-accordion__container">
+                      <button class="cf-accordion__button">
+                        <svg
+                          width="56"
+                          height="56"
+                          viewBox="0 0 56 56"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect
+                            width="56"
+                            height="56"
+                            rx="28"
+                            style="fill: var(--colorPagePrimary)"
+                          ></rect>
+                          <rect
+                            x="38"
+                            y="25.999"
+                            width="4"
+                            height="20"
+                            transform="rotate(90 38 25.999)"
+                            fill="white"
+                          ></rect>
+                          <rect
+                            x="29.999"
+                            y="37.999"
+                            width="4"
+                            height="20"
+                            transform="rotate(-180 29.999 37.999)"
+                            fill="white"
+                          ></rect>
+                        </svg>
+                      </button>
+                      <h4 class="cf-accordion__title">Integrity</h4>
+                      <div class="cf-accordion__text">
+                        <p>
+                          <strong
+                            >Those who act ethically will show an understanding
+                            of:</strong
+                          >
+                        </p>
+                        <ul>
+                          <li>
+                            <p>
+                              <b>the meaning of integrity: </b>the quality of
+                              being honest and having strong moral principles
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <b>professional ethics</b>: standards of conduct
+                              and values in respect of the organisation, the
+                              governance profession and all related activities
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <b>recognising and limiting bias:&nbsp;</b
+                              >incorporating equality, diversity and inclusion
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <b
+                                >the identification and management of conflicts
+                                of interest</b
+                              >: both one’s own and others’.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="cf-accordion__container">
+                      <button class="cf-accordion__button">
+                        <svg
+                          width="56"
+                          height="56"
+                          viewBox="0 0 56 56"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect
+                            width="56"
+                            height="56"
+                            rx="28"
+                            style="fill: var(--colorPagePrimary)"
+                          ></rect>
+                          <rect
+                            x="38"
+                            y="25.999"
+                            width="4"
+                            height="20"
+                            transform="rotate(90 38 25.999)"
+                            fill="white"
+                          ></rect>
+                          <rect
+                            x="29.999"
+                            y="37.999"
+                            width="4"
+                            height="20"
+                            transform="rotate(-180 29.999 37.999)"
+                            fill="white"
+                          ></rect>
+                        </svg>
+                      </button>
+                      <h4 class="cf-accordion__title">Independence</h4>
+                      <div class="cf-accordion__text">
+                        <p>
+                          <strong
+                            >Those who act independently will show an
+                            understanding of:</strong
+                          >
+                        </p>
+                        <ul>
+                          <li>
+                            <p>
+                              when and how to take an
+                              <b>independent stance</b> in contrast with that of
+                              others
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <b>how to communicate </b>and when to maintain and
+                              promote alternative opinions
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              when and <b>how to challenge the status quo</b>,
+                              including when it is not beneficial
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              when and in what context and environment
+                              <b>discretion</b> is required.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="cf-accordion__container">
+                      <button class="cf-accordion__button">
+                        <svg
+                          width="56"
+                          height="56"
+                          viewBox="0 0 56 56"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect
+                            width="56"
+                            height="56"
+                            rx="28"
+                            style="fill: var(--colorPagePrimary)"
+                          ></rect>
+                          <rect
+                            x="38"
+                            y="25.999"
+                            width="4"
+                            height="20"
+                            transform="rotate(90 38 25.999)"
+                            fill="white"
+                          ></rect>
+                          <rect
+                            x="29.999"
+                            y="37.999"
+                            width="4"
+                            height="20"
+                            transform="rotate(-180 29.999 37.999)"
+                            fill="white"
+                          ></rect>
+                        </svg>
+                      </button>
+                      <h4 class="cf-accordion__title">Open-minded</h4>
+                      <div class="cf-accordion__text">
+                        <p>
+                          <strong
+                            >Those who are open-minded will show an
+                            understanding of:</strong
+                          >
+                        </p>
+                        <ul>
+                          <li>
+                            <p>
+                              how<b> the </b>promotion of<b> </b>alternative
+                              views and opinions generates a
+                              <b>diversity of thinking and discussion</b> to the
+                              benefit of the organisation
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              a
+                              <b
+                                >learning culture for themself and the
+                                organisation</b
+                              >, learning from successes and mistakes,
+                              encouraging continuous sharing of knowledge
+                              alongside formal and informal training
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              working flexibly within their role and in
+                              interactions with others to maintain focus on
+                              deliverables and a
+                              <b>positive work environment</b>
+                            </p>
+                          </li>
+                        </ul>
+                        <ul>
+                          <li>
+                            <p>
+                              <b
+                                >promoting governance as an enabler and
+                                collaborating with and embedding into the values
+                                and culture of an organisation as well as the
+                                values of the role holder</b
+                              >
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              working pro-actively within
+                              <b>teams of colleagues</b> that benefit the
+                              organisation and deliver effective outcomes.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="cf-accordion__container">
+                      <button class="cf-accordion__button">
+                        <svg
+                          width="56"
+                          height="56"
+                          viewBox="0 0 56 56"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect
+                            width="56"
+                            height="56"
+                            rx="28"
+                            style="fill: var(--colorPagePrimary)"
+                          ></rect>
+                          <rect
+                            x="38"
+                            y="25.999"
+                            width="4"
+                            height="20"
+                            transform="rotate(90 38 25.999)"
+                            fill="white"
+                          ></rect>
+                          <rect
+                            x="29.999"
+                            y="37.999"
+                            width="4"
+                            height="20"
+                            transform="rotate(-180 29.999 37.999)"
+                            fill="white"
+                          ></rect>
+                        </svg>
+                      </button>
+                      <h4 class="cf-accordion__title">
+                        Emotional intelligence
+                      </h4>
+                      <div class="cf-accordion__text">
+                        <p>
+                          <strong
+                            >Those who act with emotional intelligence show an
+                            understanding of:</strong
+                          >
+                        </p>
+                        <ul>
+                          <li>
+                            <p>
+                              the application of alternative responses to
+                              reflect environments and situations demonstrating
+                              <b>emotional self-awareness and self-control</b>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              their own and others’<b>
+                                biases and pre-conceptions </b
+                              >and how to adapt situations and environments to
+                              limit their impact
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              how to show
+                              <b>empathy, sensitivity and perceptiveness</b> in
+                              a professional environment
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <b>building relationships</b> with and working
+                              alongside colleagues, especially those with
+                              differing personalities, views, backgrounds,
+                              experiences and attitudes
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              the benefit of investing in their own learning to
+                              maintain and develop their
+                              <b>contribution and effectiveness</b>.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Content end -->
+                </div>
+              </div>
+              <!-------------------- Content column end -------------------->
+
+              <!----------------- Large Assessment banner start ------------------>
+
+              <div class="cf-layout grid-full-width grid-row-2">
+                <div class="cf-banner values">
+                  <object
+                    type="image/svg+xml"
+                    data="/MODx/snippets/competency-framework/assets/quiz.svg"
+                  >
+                    <img
+                      src="/MODx/snippets/competency-framework/assets/quiz.svg"
+                      alt="Quiz icon"
+                    />
+                  </object>
+                  <!-- < ?=importSVG($phpReadableBaseSVGUrl, $title, "quiz")?> -->
+                  <div class="cf-banner__content">
+                    <h3>Assessment tool</h3>
+                    <a
+                      href="professional-development/competency-framework/values/values-assessment"
+                      class="cf-banner__button-link"
+                    >
+                      <span>Get started</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!------------------ Large Quiz banner end ------------------->
+
+              <!---------------- MPU & Sidenav column start ---------------->
+              <div class="cf-layout">
+                <!-- MPU -->
+                <aside class="cf-mpu">
+                  <div
+                    class="cf-mpu__container cf-mpu__container--values values quiz"
+                    style="--colorMPU: var(--colorValues)"
+                  >
+                    <svg
+                      width="77"
+                      height="77"
+                      viewBox="0 0 77 77"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Quiz icon</title>
+                      <circle
+                        cx="38.8252"
+                        cy="38.3414"
+                        r="38"
+                        fill="white"
+                        fill-opacity="0.25"
+                      ></circle>
+                      <path
+                        d="M38.5032 22.3416C35.7954 22.3411 33.1358 23.0611 30.7954 24.4284C28.4549 25.7956 26.5172 27.7612 25.1796 30.125C23.8419 32.4887 23.1522 35.1662 23.1805 37.8847C23.2089 40.6032 23.9543 43.2656 25.341 45.6007L23.1799 54.3416L31.4733 51.3949C33.5347 52.4637 35.8109 53.0485 38.1303 53.1053C40.4496 53.162 42.7515 52.6893 44.8623 51.7227C46.9731 50.7562 48.8378 49.321 50.3156 47.5254C51.7935 45.7298 52.8459 43.6208 53.3936 41.3573C53.9413 39.0939 53.9698 36.7351 53.4772 34.4589C52.9846 32.1828 51.9836 30.0486 50.5497 28.2175C49.1158 26.3864 47.2865 24.906 45.1997 23.8882C43.1129 22.8703 40.8232 22.3415 38.5032 22.3416ZM38.5032 51.1108C36.2035 51.1103 33.943 50.5124 31.9415 49.3754L31.4377 49.0886L25.9148 51.1108L27.5081 45.3035L27.2624 44.9181C25.6724 42.4122 24.9582 39.4463 25.2323 36.488C25.5064 33.5296 26.7533 30.7469 28.7763 28.5785C30.7994 26.4101 33.4837 24.9792 36.4061 24.5114C39.3285 24.0436 42.3228 24.5655 44.9172 25.9948C47.5116 27.4241 49.5585 29.6795 50.7353 32.4056C51.9121 35.1317 52.152 38.1735 51.417 41.0515C50.682 43.9296 49.014 46.4802 46.6759 48.3015C44.3378 50.1228 41.4625 51.1111 38.5032 51.1108Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M39.5288 40.9311V40.5992C39.5288 40.0801 39.8351 39.7737 40.3712 39.4163C41.1966 38.8717 42.5837 38.191 42.5837 35.9359C42.5837 33.7659 40.9414 32.4044 38.5501 32.4044C36.2185 32.4044 34.6442 33.9021 34.6442 35.9955C34.6442 36.1997 34.6612 36.3784 34.6783 36.5401L36.7631 36.6592C36.7291 36.4805 36.7121 36.3018 36.7121 36.1231C36.7121 35.0849 37.4099 34.3531 38.5501 34.3531C39.6139 34.3531 40.3627 34.9743 40.3627 36.1146C40.3627 37.3145 39.6649 37.7399 38.9926 38.1569C38.2523 38.6164 37.6481 39.0674 37.6481 40.2162V40.9311H39.5288ZM38.6097 44.8455C39.3501 44.8455 39.9457 44.2413 39.9457 43.4925C39.9457 42.7351 39.3415 42.1394 38.6097 42.1394C37.8609 42.1394 37.2397 42.7351 37.2397 43.4925C37.2397 44.2413 37.8524 44.8455 38.6097 44.8455Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                    <div class="cf-mpu__content">
+                      <span class="caps"> Values </span>
+                      <h3>Assessment tool</h3>
+                    </div>
+                    <a
+                      href="professional-development/competency-framework/values/values-assessment"
+                      class="cf-link-button__small"
+                    >
+                      <span> Get started </span>
+                    </a>
+                  </div>
+                  <div
+                    class="cf-mpu__container cf-mpu__container--practice practice"
+                    style="--colorMPU: var(--colorPractice)"
+                  >
+                    <svg
+                      width="42"
+                      height="40"
+                      viewBox="0 0 42 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Practice icon</title>
+                      <g clip-path="url(#clip0_516_2877)">
+                        <path
+                          d="M41.1563 33.3937L18.2971 39.5133C16.4958 39.996 14.6171 40.1192 12.7682 39.8758C10.9193 39.6324 9.13642 39.0271 7.52142 38.0947C5.90642 37.1623 4.4909 35.9208 3.35568 34.4413C2.22046 32.9618 1.38778 31.2732 0.90519 29.4719C-2.4769 16.847 5.0121 3.87 17.6396 0.486619C19.4409 0.0039223 21.3196 -0.119242 23.1685 0.124158C25.0174 0.367559 26.8003 0.972757 28.4153 1.9052C30.0303 2.83764 31.4458 4.07906 32.581 5.55857C33.7162 7.03808 34.5489 8.72671 35.0315 10.528L41.1563 33.3937Z"
+                          fill="url(#paint0_linear_516_2877)"
+                        ></path>
+                        <path
+                          d="M17.4558 15.453L23.7502 15.453C23.8513 15.4449 23.9458 15.399 24.0146 15.3244C24.0835 15.2498 24.1217 15.152 24.1217 15.0505C24.1217 14.949 24.0835 14.8512 24.0146 14.7766C23.9458 14.702 23.8513 14.6561 23.7502 14.6479L17.4558 14.6479C17.3539 14.6562 17.2588 14.7024 17.1892 14.7774C17.1193 14.8522 17.0804 14.9507 17.0804 15.0531C17.0804 15.1554 17.1193 15.254 17.1892 15.3288C17.2596 15.4018 17.3546 15.4461 17.4558 15.453Z"
+                          fill="white"
+                        ></path>
+                        <path
+                          d="M23.7501 18.043L19.8749 18.043C19.773 18.0513 19.6778 18.0974 19.6083 18.1724C19.5384 18.2472 19.4995 18.3457 19.4995 18.4481C19.4995 18.5505 19.5384 18.649 19.6083 18.7238C19.6778 18.7988 19.773 18.8449 19.8749 18.8532L23.7501 18.8532C23.8513 18.8451 23.9457 18.7992 24.0146 18.7246C24.0834 18.65 24.1216 18.5522 24.1216 18.4507C24.1216 18.3492 24.0834 18.2514 24.0146 18.1768C23.9457 18.1022 23.8513 18.0563 23.7501 18.0481L23.7501 18.043Z"
+                          fill="white"
+                        ></path>
+                        <path
+                          d="M20.8444 21.4431L17.4558 21.4431C17.3539 21.4514 17.2588 21.4976 17.1892 21.5725C17.1193 21.6473 17.0804 21.7459 17.0804 21.8482C17.0804 21.9506 17.1193 22.0491 17.1892 22.1239C17.2588 22.1989 17.3539 22.2451 17.4558 22.2534L20.8444 22.2534C20.9463 22.2451 21.0414 22.1989 21.111 22.1239C21.1809 22.0491 21.2198 21.9506 21.2198 21.8482C21.2198 21.7459 21.1809 21.6473 21.111 21.5725C21.0414 21.4976 20.9463 21.4514 20.8444 21.4431Z"
+                          fill="white"
+                        ></path>
+                        <path
+                          d="M27.4261 28.7032L26.2301 26.1236C26.3237 26.1106 26.4095 26.0647 26.4722 25.9941C26.5357 25.9229 26.5707 25.8307 26.5706 25.7353L26.5706 12.6172C26.5704 12.5645 26.5603 12.5122 26.5408 12.4632C26.5209 12.4146 26.4914 12.3706 26.4541 12.3338C26.4173 12.2959 26.3732 12.2659 26.3245 12.2457C26.2757 12.2254 26.2234 12.2153 26.1706 12.216L15.0394 12.216C14.9866 12.2153 14.9342 12.2254 14.8855 12.2457C14.8368 12.2659 14.7927 12.2959 14.7559 12.3338C14.7189 12.3709 14.6894 12.4148 14.6692 12.4632C14.6496 12.5122 14.6395 12.5645 14.6394 12.6172L14.6394 14.8849L10.1895 16.4704C10.1395 16.4884 10.0935 16.516 10.0542 16.5518C10.0148 16.5875 9.98296 16.6307 9.96035 16.6788C9.93775 16.7269 9.92486 16.779 9.92242 16.8321C9.91999 16.8852 9.92806 16.9382 9.94617 16.9882L14.3314 29.34C14.3501 29.3876 14.3773 29.4314 14.4116 29.4694C14.4485 29.5083 14.4924 29.5399 14.541 29.5626C14.5966 29.5896 14.6579 29.6029 14.7197 29.6014C14.7638 29.6011 14.8076 29.5932 14.8491 29.5781L23.6687 26.4213L25.2037 29.736C25.2671 29.876 25.3696 29.9947 25.4988 30.0777C25.6279 30.1607 25.7777 30.2056 25.9312 30.2072C26.0485 30.2073 26.1643 30.1812 26.2703 30.1308L27.0365 29.771C27.1317 29.7267 27.2171 29.6638 27.2876 29.5859C27.3934 29.4679 27.4621 29.3214 27.4851 29.1647C27.5081 29.0079 27.4845 28.8478 27.417 28.7045L27.4261 28.7032ZM15.4341 13.0185L25.7694 13.0185L25.7694 25.1308L24.3974 22.172C24.3703 22.1124 24.3369 22.056 24.2977 22.0037L23.1975 20.6447C23.0853 20.5045 22.9292 20.4061 22.7543 20.3653C22.5794 20.3244 22.3959 20.3436 22.2332 20.4195C22.0705 20.4955 21.938 20.624 21.857 20.7843C21.7761 20.9446 21.7513 21.1274 21.7867 21.3035L22.1219 23.0172C22.1345 23.0793 22.1545 23.1397 22.1815 23.1971L23.1639 25.3263L15.4341 25.3263L15.4341 13.0185ZM22.8248 22.4671L22.5737 21.1611L23.4098 22.1966L22.8248 22.4671ZM10.8367 17.093L14.6316 15.7391L14.6316 25.7327C14.6313 25.8392 14.6732 25.9415 14.7482 26.0172C14.8231 26.0929 14.9251 26.1358 15.0316 26.1365L22.1168 26.1365L14.9436 28.6928L10.8367 17.093ZM25.9324 29.4008L23.0655 23.2333L23.8305 22.8735L26.7 29.0397L25.9324 29.4008Z"
+                          fill="white"
+                        ></path>
+                        <path
+                          d="M38.9922 32.1383L17.8389 37.8062C16.2619 38.2288 14.6171 38.3366 12.9984 38.1235C11.3797 37.9104 9.81884 37.3806 8.40492 36.5642C6.99099 35.7479 5.75171 34.6611 4.75783 33.3658C3.76395 32.0705 3.03494 30.5921 2.61243 29.0151C1.111 23.4058 1.89888 17.4298 4.80282 12.4013C7.70675 7.37281 12.489 3.70354 18.0978 2.20041C21.2819 1.34669 24.6746 1.79254 27.53 3.43989C30.3854 5.08725 32.4696 7.80124 33.3243 10.985L38.9922 32.1383Z"
+                          stroke="white"
+                          stroke-opacity="0.08"
+                          stroke-width="3.53482"
+                        ></path>
+                      </g>
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_516_2877"
+                          x1="41.0955"
+                          y1="33.4053"
+                          x2="-5.23771"
+                          y2="6.54927"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#005BFF"></stop>
+                          <stop offset="1" stop-color="#004BD2"></stop>
+                        </linearGradient>
+                        <clipPath id="clip0_516_2877">
+                          <rect
+                            width="41.0626"
+                            height="40"
+                            fill="white"
+                            transform="translate(0.09375)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <div class="cf-mpu__content">
+                      <span class="caps"> The Competency Framework </span>
+                      <h3>Practice</h3>
+                    </div>
+                    <a
+                      href="professional-development/competency-framework/practice"
+                      class="cf-link-button__small"
+                    >
+                      <span> Discover more </span>
+                    </a>
+                  </div>
+                  <div
+                    class="cf-mpu__container cf-mpu__container--knowledge knowledge"
+                    style="--colorMPU: var(--colorKnowledge)"
+                  >
+                    <svg
+                      width="43"
+                      height="40"
+                      viewBox="0 0 43 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Knowledge icon</title>
+                      <g clip-path="url(#clip0_908_4159)">
+                        <path
+                          d="M0.736328 33.3654L6.89385 10.6446C8.94635 3.00739 16.9177 -1.52721 24.6027 0.477562C37.2518 3.81885 44.8413 16.8021 41.4523 29.4513C39.3998 37.0408 31.5716 41.5277 23.9822 39.5229L0.736328 33.3654Z"
+                          fill="url(#paint0_linear_908_4159)"
+                        ></path>
+                        <path
+                          d="M29.3535 12H17.8489C17.3353 12 16.8731 12.2054 16.5136 12.5136C16.2054 12.8731 16 13.3353 16 13.7976V25.9698C16.0514 26.432 16.2568 26.8429 16.565 27.2024C16.9245 27.5106 17.3867 27.716 17.8489 27.716H18.7734V28.6405C18.7734 28.6918 18.7734 28.7432 18.8248 28.7946C18.8248 28.8459 18.8761 28.8973 18.9275 28.8973C18.9789 28.9486 19.0302 28.9486 19.0816 29C19.1329 29 19.1843 29 19.287 29L20.1088 28.7432C20.1601 28.7432 20.2115 28.7432 20.2628 28.7432L21.0846 29C21.136 29 21.136 29 21.1873 29H21.2387C21.29 29 21.3414 28.9486 21.3927 28.9486C21.4441 28.8973 21.4955 28.8973 21.4955 28.8459C21.4955 28.7946 21.5468 28.7432 21.5468 28.6918V27.7674H29.3535V24.6858V12ZM17.8489 24.0181C17.3867 24.0181 16.9758 24.1722 16.6163 24.429V13.7976C16.6163 13.4894 16.7704 13.1813 16.9758 12.9758C17.1813 12.7704 17.4894 12.6163 17.8489 12.6163V24.0181V24.0181ZM28.6858 24.0181H18.5166V12.6163H28.6344V24.0181H28.6858ZM17.8489 27.0483C17.5408 27.0483 17.2326 26.9456 16.9758 26.6888C16.7704 26.4834 16.6163 26.1752 16.6163 25.8671V25.8157C16.6163 25.5076 16.7704 25.1994 16.9758 24.994C17.0786 24.8912 17.2326 24.7885 17.3867 24.7372C17.5408 24.6858 17.6949 24.6858 17.8489 24.6858H28.6344V25.5589H18.2085C18.1057 25.5589 18.0544 25.6103 18.003 25.6616C17.9517 25.713 17.9003 25.8157 17.9003 25.8671C17.9003 25.9698 17.9517 26.0211 18.003 26.0725C18.0544 26.1239 18.1571 26.1752 18.2598 26.1752H18.8248V26.997L17.8489 27.0483ZM20.7764 28.1782L20.3656 28.0755C20.1601 28.0242 20.006 28.0242 19.8006 28.0755L19.4411 28.1782V26.1752H20.7764V28.1782ZM21.4441 26.1752H28.6858V26.997H21.4441V26.1752Z"
+                          fill="white"
+                        ></path>
+                        <path
+                          d="M21.0328 15.8009H26.2201C26.2714 15.8009 26.3228 15.8009 26.3742 15.8009C26.4255 15.8009 26.4769 15.7495 26.4769 15.7495C26.5282 15.6982 26.5282 15.6982 26.5796 15.6468C26.5796 15.5954 26.631 15.5441 26.631 15.4927C26.631 15.4414 26.631 15.39 26.5796 15.3386C26.5796 15.2873 26.5282 15.2359 26.4769 15.2359C26.4255 15.1846 26.4255 15.1846 26.3742 15.1846C26.3228 15.1846 26.2714 15.1846 26.2201 15.1846H21.0328C20.93 15.1846 20.8787 15.2359 20.8273 15.2873C20.776 15.3386 20.7246 15.4414 20.7246 15.4927C20.7246 15.5441 20.776 15.6468 20.8273 15.6982C20.8787 15.7495 20.93 15.8009 21.0328 15.8009Z"
+                          fill="white"
+                        ></path>
+                        <path
+                          d="M22.3179 14.5686H24.9373C25.04 14.5686 25.0913 14.5172 25.1941 14.4658C25.2454 14.4145 25.2454 14.3118 25.2454 14.209C25.2454 14.1063 25.1941 14.055 25.1427 14.0036C25.0913 13.9522 24.9886 13.9009 24.8859 13.9009H22.2666C22.2152 13.9009 22.1638 13.9009 22.1638 13.9009C22.1125 13.9009 22.1125 13.9522 22.0611 13.9522C22.0098 14.0036 22.0098 14.0036 22.0098 14.055C22.0098 14.1063 22.0098 14.1577 22.0098 14.1577C22.0098 14.209 22.0098 14.2604 22.0098 14.2604C22.0098 14.3118 22.0611 14.3118 22.0611 14.3631C22.1125 14.4145 22.1125 14.4145 22.1638 14.4145C22.2152 14.5172 22.2666 14.5686 22.3179 14.5686Z"
+                          fill="white"
+                        ></path>
+                        <path
+                          d="M21.0333 17.0846H26.2207C26.3234 17.0846 26.3747 17.0332 26.4775 16.9819C26.5288 16.9305 26.5802 16.8278 26.5802 16.7764C26.5802 16.7251 26.5288 16.6223 26.4775 16.571C26.4261 16.5196 26.3234 16.4683 26.2207 16.4683H21.0333C20.9306 16.4683 20.8793 16.5196 20.7765 16.571C20.7252 16.6223 20.6738 16.7251 20.6738 16.7764C20.6738 16.8278 20.7252 16.9305 20.7765 16.9819C20.8279 17.0332 20.9306 17.0846 21.0333 17.0846Z"
+                          fill="white"
+                        ></path>
+                        <path
+                          d="M24.9373 22.0669H22.3179C22.2152 22.0669 22.1638 22.1183 22.1125 22.1696C22.0611 22.221 22.0098 22.3237 22.0098 22.3751C22.0098 22.4778 22.0611 22.5291 22.1125 22.5805C22.1638 22.6318 22.2666 22.6832 22.3179 22.6832H24.9373C25.04 22.6832 25.0913 22.6318 25.1427 22.5805C25.1941 22.5291 25.2454 22.4264 25.2454 22.3751C25.2454 22.2723 25.1941 22.221 25.1427 22.1696C25.0913 22.1183 25.04 22.0669 24.9373 22.0669Z"
+                          fill="white"
+                        ></path>
+                        <path
+                          d="M2.88477 32.124L8.56496 11.0738C10.4265 4.39126 17.3955 0.429441 24.1258 2.19555C35.8203 5.29818 42.8848 17.3268 39.7344 29.0213C37.9206 35.6562 31.0948 39.618 24.4599 37.8519L2.88477 32.124Z"
+                          stroke="white"
+                          stroke-opacity="0.08"
+                          stroke-width="3.53484"
+                        ></path>
+                      </g>
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_908_4159"
+                          x1="47.5232"
+                          y1="6.5146"
+                          x2="0.874607"
+                          y2="33.5198"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#00AF56"></stop>
+                          <stop offset="1" stop-color="#00C561"></stop>
+                        </linearGradient>
+                        <clipPath id="clip0_908_4159">
+                          <rect
+                            width="41.5274"
+                            height="40"
+                            fill="white"
+                            transform="translate(0.736328)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <div class="cf-mpu__content">
+                      <span class="caps"> The Competency Framework </span>
+                      <h3>Knowledge</h3>
+                    </div>
+                    <a
+                      href="professional-development/competency-framework/knowledge"
+                      class="cf-link-button__small"
+                    >
+                      <span> Discover more </span>
+                    </a>
+                  </div>
+                </aside>
+
+                <!-- Sidenav -->
+                <nav id="cf-sidenav-container">
+                  <!-- cf-sidenav -->
+                  <h3 class="cf-heading__small-title cf-sidenav-heading caps">
+                    <!-- cf-sidenav__heading -->
+                    Behind the framework
+                  </h3>
+                  <ul class="cf-sidenav-list">
+                    <!-- cf-sidenav__list -->
+                    <li class="cf-sidenav-list-items no-style">
+                      <!-- cf-sidenav__list-items -->
+                      <a
+                        href="professional-development/competency-framework/about"
+                        class="cf-sidenav-link default"
+                      >
+                        <!-- cf-sidenav__link -->
+                        <object
+                          class="cf-sidenav-icon"
+                          type="image/svg+xml"
+                          data="MODx/snippets/competency-framework/assets/the-competency-framework.svg"
+                        >
+                          <!-- cf-sidenav__icon  -->
+                          <img
+                            src="MODx/snippets/competency-framework/assets/the-competency-framework.svg"
+                            alt="About icon"
+                          />
+                        </object>
+                        <!-- < ?=importSVG($phpReadableBaseSVGUrl, $title, $link)?> -->
+                        <span>About</span>
+                        <svg
+                          class="arrowSVG"
+                          width="10"
+                          height="16"
+                          viewBox="0 0 10 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.49375 8L0.24707 2.75332L2.50039 0.5L10.0004 8L2.50039 15.5L0.24707 13.2467L5.49375 8Z"
+                            fill="var(--colorBlue)"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="cf-sidenav-list-items no-style">
+                      <!-- cf-sidenav__list-items -->
+                      <a
+                        href="professional-development/competency-framework/proficiency-levels"
+                        class="cf-sidenav-link default"
+                      >
+                        <!-- cf-sidenav__link -->
+                        <object
+                          class="cf-sidenav-icon"
+                          type="image/svg+xml"
+                          data="MODx/snippets/competency-framework/assets/proficiency-levels.svg"
+                        >
+                          <!-- cf-sidenav__icon  -->
+                          <img
+                            src="MODx/snippets/competency-framework/assets/proficiency-levels.svg"
+                            alt="Proficiency levels icon"
+                          />
+                        </object>
+                        <!-- < ?=importSVG($phpReadableBaseSVGUrl, $title, $link)?> -->
+                        <span>Proficiency levels</span>
+                        <svg
+                          class="arrowSVG"
+                          width="10"
+                          height="16"
+                          viewBox="0 0 10 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.49375 8L0.24707 2.75332L2.50039 0.5L10.0004 8L2.50039 15.5L0.24707 13.2467L5.49375 8Z"
+                            fill="var(--colorBlue)"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!----------------- MPU & Sidenav column end ----------------->
+            </div>
+          </main>
+          <!---------------------- Main body end ----------------------->
+
+          <!-- Javascript -->
+          <script
+            src="/assets/js/js-competency-framework/area-page/script.js?v=20"
+            type="module"
+          ></script>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

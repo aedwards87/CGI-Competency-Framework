@@ -1,0 +1,267 @@
+/* *************************************************************** */
+/* ***********************   Base resets   *********************** */
+/* *************************************************************** */
+body,
+html {
+  font-family: var(--fontPrimaryFamily);
+}
+
+body {
+  line-height: var(--s28);
+}
+
+#siteWrapper #contentWrapper {
+  color: var(--colorRoyalBlue);
+}
+
+#siteWrapper > #contentWrapper > .sectionWrapper {
+  min-height: calc(100vh - (130px + 186.5px));
+  padding-top: clamp(50px, 5vh, 4rem);
+  padding-bottom: clamp(50px, 5vh, 4rem);
+}
+
+.sectionWrapper > section {
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 0;
+}
+
+@media (max-width: 981px) and (min-height: 980px) {
+  #siteWrapper > #contentWrapper > .sectionWrapper {
+    padding-top: var(--s52);
+    padding-bottom: var(--s52);
+  }
+}
+
+/* *********************   Base resets end  ********************* */
+
+/* ************************************************************** */
+/* ***********************   Type resets   ********************** */
+/* ************************************************************** */
+.cf-container h1,
+.cf-container h2,
+.cf-container h3,
+.cf-container h4,
+.cf-container h5,
+.cf-container h6 {
+  font-family: inherit;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  color: var(--colorPagePrimary, var(--colorBlue));
+}
+
+.cf-container h3 {
+  font-size: var(--fontHeadingSize3);
+  line-height: var(--fontHeadingLineHeight3);
+}
+
+.cf-container h4 {
+  font-size: var(--fontHeadingSize4);
+  line-height: var(--fontHeadingLineHeight4);
+}
+
+.cf-container h1 span,
+.cf-container h2 span,
+.cf-container h3 span,
+.cf-container h4 span,
+.cf-container h5 span,
+.cf-container h6 span {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.cf-container strong,
+.cf-container b {
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.cf-container h1::after,
+.cf-container h2::after,
+.cf-container h3::after {
+  content: none;
+}
+
+.cf-container p,
+.cf-container div,
+.cf-container span,
+.cf-container blockquote,
+.cf-container pre,
+.cf-container a,
+.cf-container button,
+.cf-container label,
+.cf-container li,
+.cf-container textarea,
+.cf-container input,
+.cf-container figcaption {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+#siteWrapper .cf-container a,
+#siteWrapper .cf-container a:visited {
+  color: var(--colorPagePrimary, var(--colorBlue));
+  text-decoration: underline;
+}
+
+#siteWrapper .cf-container a:hover,
+#siteWrapper .cf-container a:focus:focus,
+#siteWrapper .cf-container a:focus:hover,
+#siteWrapper .cf-container a:visited:hover,
+#siteWrapper .cf-container a:visited:focus:hover {
+  color: var(--colorPagePrimary25l, var(--colorBlue25l));
+  text-decoration-thickness: 3px;
+}
+
+#siteWrapper .cf-container a.default,
+#siteWrapper .cf-container a.default:visited {
+  color: var(--colorBlue);
+}
+
+#siteWrapper .cf-container a.default:hover,
+#siteWrapper .cf-container a.default:focus:focus,
+#siteWrapper .cf-container a.default:focus:hover,
+#siteWrapper .cf-container a.default:visited:hover,
+#siteWrapper .cf-container a.default:visited:focus:hover {
+  color: var(--colorBlue25l);
+}
+
+h1.cf-heading__hero-title,
+h2.cf-heading__hero-title {
+  font-weight: 600;
+  font-size: clamp(2.25rem, 10vw, 3.5rem);
+  line-height: clamp(2.75rem, 11.8vw, 4rem);
+}
+
+h1.cf-heading__small-title,
+h2.cf-heading__small-title,
+h3.cf-heading__small-title {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: var(--s20);
+  letter-spacing: 1px;
+  color: var(--colorPagePrimary, var(--colorRoyalBlue));
+}
+
+@media (min-width: 768px) {
+  h1.cf-heading__hero-title,
+  h2.cf-heading__hero-title {
+    font-size: clamp(2.9rem, 5.1vw, 4.2rem);
+    line-height: clamp(3.3rem, 5.8vw, 5rem);
+  }
+
+  h1.cf-heading__small-title,
+  h2.cf-heading__small-title,
+  h3.cf-heading__small-title {
+    font-size: 1em;
+    line-height: 1.625rem;
+    letter-spacing: 1.5px;
+  }
+}
+
+.cf-container p + *,
+.cf-container * + p,
+.cf-container p + ul > li + * {
+  padding-top: var(--s24);
+}
+
+.cf-container p + ol > li + * {
+  padding-top: var(
+    --s24
+  ) !important; /* No choice but to use !important, as had to overide an !important already in use */
+}
+
+.cf-container p + h3,
+.cf-container p + h4,
+.cf-container p + h5,
+.cf-container p + h6 {
+  padding-top: var(--s52);
+}
+
+.cf-container
+  .cf-content__sub-headline
+  + .cf-content__text
+  h3:where(:not(* + h3)),
+.cf-container
+  .cf-content__sub-headline
+  + .cf-content__text
+  h4:where(:not(* + h4)),
+.cf-container
+  .cf-content__sub-headline
+  + .cf-content__text
+  h5:where(:not(* + h5)),
+.cf-container
+  .cf-content__sub-headline
+  + .cf-content__text
+  h6:where(:not(* + h6)) {
+  padding-top: var(--s28);
+}
+
+/* ******************   Type resets end   ****************** */
+
+/* ********************************************************* */
+/* *******************   Button resets   ******************* */
+/* ********************************************************* */
+.cf-container button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+/* *****************   Button resets end   ***************** */
+
+/* ********************************************************* */
+/* *******************   Lists resets   ******************** */
+/* ********************************************************* */
+ol li {
+  padding: 0 !important; /* No choice but to use !important, as had to overide an !important already in use */
+}
+.cf-container ul,
+.cf-container ol {
+  margin-bottom: 0;
+}
+.cf-container ol {
+  counter-reset: counter;
+}
+.cf-container ul li,
+.cf-container ol li {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.cf-container ol li {
+  counter-increment: counter;
+}
+.cf-container ul li > *,
+.cf-container ol li > * {
+  grid-column: 2;
+}
+.cf-container ul li.no-style::before,
+.cf-container ol li.no-style::before {
+  content: none;
+}
+.cf-container ul li::before,
+.cf-container ol li::before {
+  font-size: 1em;
+  padding-right: var(--s16);
+  position: revert;
+  inset: revert;
+  color: var(--colorPagePrimary, var(--colorBlue));
+  font-weight: bold;
+  font-family: inherit;
+  display: inline-block;
+}
+.cf-container ul li::before {
+  content: "\2022";
+  margin-top: -2px;
+}
+.cf-container ol li::before {
+  content: counter(counter) ". ";
+}
+/* *********************   Lists end   ********************* */

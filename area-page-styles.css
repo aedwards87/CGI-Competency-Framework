@@ -1,0 +1,609 @@
+.cf-page__colors {
+  --colorPractice: var(--colorBlue);
+  --colorPractice90l: var(--colorBlue90l);
+  --colorPractice25l: var(--colorBlue25l);
+  --colorPracticeAccent: var(--colorOrange);
+  --colorKnowledge: var(--colorGreen);
+  --colorKnowledge90l: var(--colorGreen90l);
+  --colorKnowledge25l: var(--colorGreen25l);
+  --colorKnowledgeAccent: var(--colorYellow);
+  --colorValues: var(--colorViolet);
+  --colorValues90l: var(--colorViolet90l);
+  --colorValues25l: var(--colorViolet25l);
+  --colorValuesAccent: var(--colorLightBlue);
+}
+
+.cf-layout:nth-child(1) {
+  max-width: 650px;
+}
+
+.cf-layout:last-child {
+  row-gap: clamp(60px, 8vw, 72px);
+}
+
+/* ********************************************************************* */
+/* ******************************   MPU   ****************************** */
+/* ********************************************************************* */
+
+.cf-container {
+  --mpuMaxWidth: 270px;
+}
+
+.cf-container aside.cf-mpu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.cf-container .cf-mpu__container {
+  min-width: 250px;
+  min-height: 260px;
+  text-align: center;
+  flex: 1;
+  display: grid;
+  place-items: center;
+  align-content: space-between;
+  padding: var(--s20);
+  overflow: hidden;
+  border-radius: var(--s12);
+  -webkit-border-radius: var(--s12);
+  -moz-border-radius: var(--s12);
+  -ms-border-radius: var(--s12);
+  -o-border-radius: var(--s12);
+}
+
+.cf-mpu__container {
+  display: grid;
+  row-gap: var(--s12);
+}
+
+.cf-mpu .cf-mpu__container.quiz {
+  position: relative;
+  display: none;
+  background-color: var(--colorMPU);
+}
+
+.cf-mpu__container h3 {
+  color: var(--colorRoyalBlue);
+}
+
+.cf-mpu__container.quiz h3,
+.cf-mpu__container.quiz span,
+.cf-mpu__container.quiz a {
+  color: #ffffff;
+}
+
+.cf-mpu__container.quiz > svg,
+.cf-mpu__container.quiz > div,
+.cf-mpu__container.quiz > a {
+  z-index: 1;
+}
+
+.cf-mpu__container--values {
+  background: var(--colorValues90l);
+}
+.cf-mpu__container--practice {
+  background: var(--colorPractice90l);
+}
+.cf-mpu__container--knowledge {
+  background: var(--colorKnowledge90l);
+}
+
+.cf-mpu__container.quiz {
+  background: var(--colorPagePrimary90l);
+}
+
+.cf-mpu__container > div > span {
+  color: var(--colorGrey25d);
+  letter-spacing: 1px;
+  font-size: var(--s12);
+  line-height: 16px;
+}
+
+.cf-mpu__container object,
+.cf-mpu__container svg,
+.cf-mpu__container img {
+  width: 80px;
+  height: 76px;
+  z-index: 1;
+}
+
+.cf-mpu .cf-mpu__container.quiz::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+  background-image: url("/MODx/snippets/competency-framework/assets/quiz-small.jpg");
+  background-repeat: no-repeat;
+  background-position: 74%;
+  background-size: 110%;
+  background-blend-mode: soft-light;
+  background-color: var(--colorMPU);
+}
+.cf-container .cf-mpu__container.quiz.values::before {
+  opacity: 0.8;
+}
+
+.cf-mpu__content {
+  display: grid;
+  row-gap: var(--s8);
+}
+
+/* ******************************   MPU Button / Link  ****************************** */
+
+/* Link reset */
+#siteWrapper .cf-mpu__container a {
+  width: 100%;
+  text-decoration: none;
+}
+
+#siteWrapper .cf-mpu__container a:hover,
+#siteWrapper .cf-mpu__container a:hover:focus,
+#siteWrapper .cf-mpu__container a:focus:focus,
+#siteWrapper .cf-mpu__container a:active {
+  text-decoration: none;
+}
+
+.cf-mpu__container--values.quiz a > span {
+  background: var(--colorValuesAccent);
+  color: var(--colorValues);
+}
+.cf-mpu__container--practice.quiz a > span {
+  background: var(--colorPracticeAccent);
+}
+.cf-mpu__container--knowledge.quiz a > span {
+  background: var(--colorKnowledgeAccent);
+  color: var(--colorRoyalBlue);
+}
+
+.cf-mpu__container a > span {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 6px;
+  color: #ffffff;
+  background: var(--colorMPU);
+  border-radius: var(--s4);
+  transition: transform 0.2s ease-out, box-shadow 0.3s ease-out;
+  -webkit-transition: transform 0.2s ease-out, box-shadow 0.3s ease-out;
+  -moz-transition: transform 0.2s ease-out, box-shadow 0.3s ease-out;
+  -ms-transition: transform 0.2s ease-out, box-shadow 0.3s ease-out;
+  -o-transition: transform 0.2s ease-out, box-shadow 0.3s ease-out;
+}
+
+.cf-mpu__container a:hover > span,
+.cf-mpu__container a:focus > span {
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+}
+
+.cf-mpu__container--practice a:hover > span,
+.cf-mpu__container--practice a:focus > span {
+  box-shadow: var(--shadowMediumBlue);
+}
+.cf-mpu__container--knowledge a:hover > span,
+.cf-mpu__container--knowledge a:focus > span {
+  box-shadow: var(--shadowMediumGreen);
+}
+.cf-mpu__container--values a:hover > span,
+.cf-mpu__container--values a:focus > span {
+  box-shadow: var(--shadowMediumViolet);
+}
+
+.cf-mpu__container a:active > span,
+.cf-mpu__container a:hover:active > span {
+  box-shadow: none;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+  -webkit-transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+  -moz-transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+  -ms-transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+  -o-transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+}
+
+/* ********************************************************************** */
+/* ***********************   BOTTOM QUIZ BANNER   *********************** */
+/* ********************************************************************** */
+.cf-container .cf-banner {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  row-gap: var(--s28);
+  border-radius: var(--s12);
+  -webkit-border-radius: var(--s12);
+  -moz-border-radius: var(--s12);
+  -ms-border-radius: var(--s12);
+  -o-border-radius: var(--s12);
+  padding: clamp(var(--s20), 5vw, var(--s52));
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .cf-container .cf-banner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.cf-banner.values,
+.cf-banner.values::before {
+  background: var(--colorValues);
+}
+.cf-banner.practice,
+.cf-banner.practice::before {
+  background: var(--colorPractice);
+}
+.cf-banner.knowledge,
+.cf-banner.knowledge::before {
+  background: var(--colorKnowledge);
+}
+.cf-container .cf-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+  background-image: url("/MODx/snippets/competency-framework/assets/quiz.jpg");
+  background-repeat: no-repeat;
+  background-position: 7%;
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+.cf-container .cf-banner.values::before {
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .cf-container .cf-banner::before {
+    background-position: 74%;
+  }
+}
+
+.cf-banner.values a span {
+  background: var(--colorLightBlue);
+  color: var(--colorViolet);
+}
+.cf-banner.practice a span {
+  background: var(--colorOrange);
+  color: var(--colorLight);
+}
+.cf-banner.knowledge a span {
+  background: var(--colorYellow);
+  color: var(--colorRoyalBlue);
+}
+
+.cf-banner__content {
+  font-size: var(--s48);
+  width: 100%;
+  display: grid;
+  align-content: space-evenly;
+  gap: var(--s28);
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .cf-banner__content {
+    width: auto;
+  }
+}
+
+.cf-banner h3 {
+  font-size: clamp(var(--s28), 8vw, var(--s52));
+  line-height: clamp(var(--s32), 8vw, var(--s56));
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--colorLight);
+}
+
+#siteWrapper .cf-banner a {
+  width: 100%;
+  text-decoration: none;
+}
+
+#siteWrapper .cf-banner a:hover,
+#siteWrapper .cf-banner a:hover:focus,
+#siteWrapper .cf-banner a:focus:focus,
+#siteWrapper .cf-banner a:active {
+  text-decoration: none;
+}
+
+.cf-banner a > span {
+  display: grid;
+  place-items: center;
+  font-size: var(--s20);
+  color: var(--colorValues);
+  background: var(--colorLightBlue);
+  border-radius: var(--s4);
+  padding: var(--s8);
+  font-weight: 500;
+  transition: transform 0.2s ease-out, box-shadow 0.3s ease-out;
+  -webkit-transition: transform 0.2s ease-out, box-shadow 0.3s ease-out;
+  -moz-transition: transform 0.2s ease-out, box-shadow 0.3s ease-out;
+  -ms-transition: transform 0.2s ease-out, box-shadow 0.3s ease-out;
+  -o-transition: transform 0.2s ease-out, box-shadow 0.3s ease-out;
+}
+
+.cf-banner a:hover > span,
+.cf-banner a:focus > span {
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+}
+
+.cf-banner.practice a:hover > span,
+.cf-banner.practice a:focus > span {
+  box-shadow: var(--shadowMediumBlue);
+}
+.cf-banner.knowledge a:hover > span,
+.cf-banner.knowledge a:focus > span {
+  box-shadow: var(--shadowMediumGreen);
+}
+.cf-banner.values a:hover > span,
+.cf-banner.values a:focus > span {
+  box-shadow: var(--shadowMediumViolet);
+}
+
+.cf-banner a:active > span,
+.cf-banner a:hover:active > span {
+  box-shadow: none;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+  -webkit-transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+  -moz-transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+  -ms-transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+  -o-transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+}
+
+.cf-banner object,
+.cf-banner svg,
+.cf-banner img {
+  width: 110px;
+  aspect-ratio: 1;
+  z-index: 1;
+}
+
+/* ******************************************************************************* */
+/* ******************************   Media Queries   ****************************** */
+/* ******************************************************************************* */
+
+@media (min-width: 768px) {
+  .cf-layout {
+    flex: 1;
+  }
+}
+
+@media (min-width: 980px) {
+  .cf-container {
+    display: grid;
+    grid-template-columns: 1fr var(--mpuMaxWidth);
+  }
+  .cf-container .cf-mpu__container {
+    width: var(--mpuMaxWidth);
+  }
+  .cf-container aside.cf-mpu {
+    display: grid;
+  }
+  .cf-mpu .cf-mpu__container.quiz {
+    display: grid;
+  }
+}
+
+/* ******************************************************************************* */
+/* ********************************   Accordion   ******************************** */
+/* ******************************************************************************* */
+.cf-container .cf-accordion {
+  --spacer-gap: 24px;
+  display: grid;
+  margin-inline: -14px;
+}
+
+.cf-container .cf-accordion:where(:not(:last-child)) {
+  margin-bottom: var(--s8);
+}
+
+.cf-container .cf-accordion__container {
+  display: grid;
+  cursor: pointer;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: var(--spacer-gap);
+  padding: var(--spacer-gap);
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  transition: background 0.3s ease;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -ms-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+}
+
+.cf-container .cf-accordion__container:hover {
+  background: var(--colorPagePrimary90l);
+}
+
+.cf-container .cf-accordion__container.active {
+  background: var(--colorPagePrimary90l);
+}
+
+button.cf-accordion__button {
+  display: grid;
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+}
+
+button.cf-accordion__button svg {
+  width: 44px;
+  height: 44px;
+}
+
+.cf-container .cf-accordion_content-container {
+  display: grid;
+  row-gap: var(--spacer-gap);
+}
+
+@media (min-width: 550px) {
+  .cf-container .cf-accordion {
+    --spacer-gap: var(--s28);
+    margin-inline: 0;
+  }
+  button.cf-accordion__button svg {
+    width: var(--s48);
+    height: var(--s48);
+  }
+}
+
+.cf-container .cf-accordion__text {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  max-height: 0;
+  padding-top: 0;
+  overflow: hidden;
+  will-change: max-height;
+  opacity: 0;
+}
+
+/* If the user has no-preference regarding animations, then use animations */
+@media (prefers-reduced-motion: no-preference) {
+  .cf-container .cf-accordion__text {
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding-top 0.5s ease;
+  }
+}
+
+@media (min-width: 550px) {
+  .cf-container .cf-accordion__text {
+    grid-column: 2;
+  }
+}
+
+.cf-accordion__container.active .cf-accordion__button {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.cf-accordion__container.active .cf-accordion__text {
+  opacity: 1;
+  padding-top: var(--s32);
+}
+
+.cf-accordion__text ul li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.cf-accordion__text ul li > * {
+  grid-column: 2;
+}
+
+.cf-accordion__text strong,
+.cf-accordion__text b {
+  font-weight: 500;
+}
+/* ******************************   Accordion End   ****************************** */
+
+#cf-sidenav-container {
+  display: grid;
+  row-gap: 1.6rem;
+}
+
+h3.cf-sidenav-heading {
+  font-size: 0.875rem;
+  color: var(--colorGrey);
+  border-bottom: 2px solid var(--colorGrey50l);
+  padding-bottom: 0.4rem;
+}
+
+.cf-sidenav-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.cf-sidenav-list-items object {
+  width: 25px;
+  height: 22px;
+  pointer-events: none;
+}
+
+.cf-sidenav-list-items .arrowSVG {
+  overflow-x: auto;
+  transition: 0.2s transform ease-in-out;
+  -webkit-transition: 0.2s transform ease-in-out;
+  -moz-transition: 0.2s transform ease-in-out;
+  -ms-transition: 0.2s transform ease-in-out;
+  -o-transition: 0.2s transform ease-in-out;
+}
+
+.cf-sidenav-list-items .arrowSVG path {
+  fill: var(--colorBlue);
+  transition: 0.2s opacity ease-in-out;
+}
+
+/* Applies styles when the device has an accurate pointing device, e.g. laptop, desktop */
+@media (pointer: fine) {
+  .cf-sidenav-list-items .arrowSVG path {
+    opacity: 0;
+  }
+  .cf-sidenav-list-items:hover .arrowSVG path {
+    opacity: 1;
+    fill: var(--colorBlue25l);
+  }
+}
+/* Applies styles when the user has made no preference known */
+@media (prefers-reduced-motion: no-preference) {
+  @media (pointer: fine) {
+    .cf-sidenav-list-items .arrowSVG {
+      transform: translateX(-10px);
+    }
+    .cf-sidenav-list-items:hover .arrowSVG {
+      transform: translateX(0);
+    }
+  }
+}
+
+#siteWrapper .cf-container .cf-sidenav-link {
+  font-weight: 500;
+  line-height: 24px;
+  display: grid;
+  column-gap: 1.2rem;
+  grid-template-columns: 25px 1fr 10px;
+  align-items: baseline;
+  text-decoration: none;
+}
+
+#siteWrapper .cf-container .cf-sidenav-link:focus:focus {
+  text-decoration: none;
+}
+
+#siteWrapper .cf-container .cf-sidenav-link span {
+  font-size: 1em;
+  position: relative;
+  top: -5px;
+}
+
+/* ******************************************************************************* */
+/* ********************************   Side nav   ********************************* */
+/* ******************************************************************************* */
