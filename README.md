@@ -1,6 +1,7 @@
 # The Compentency Framework Web Application to access the proficiency of Governance Professionals
 
-Note: I was unable to retrieve the original files containing the full structure and sass components. The code within these files are what was retrieved from the website directly.
+**Note:** I was unable to retrieve the original files containing the full structure and sass components. 
+The code within these files are what was retrieved from the website directly.
 
 
 ### Tools
@@ -13,6 +14,7 @@ Note: I was unable to retrieve the original files containing the full structure 
 ### Link
 [CGIUKI Competency Framework](https://www.cgi.org.uk/professional-development/competency-framework)
 
+%SPACE 
 
 ![Screenshot 2024-07-07 221427](https://github.com/aedwards87/CGI-Competency-Framework/assets/46580915/96036901-dfa8-484e-869d-1fc729c38f70)
 
