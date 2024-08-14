@@ -1,6 +1,6 @@
 # The Compentency Framework 
 
-This was a web application created within their website to assess the proficiency level of Governance Professionals.
+This was a web application created within The Chartered Governance Institutes website to assess the proficiency level of Governance Professionals.
 
 
 ### Tools
