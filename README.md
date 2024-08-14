@@ -1,4 +1,8 @@
-# The Compentency Framework Web Application to access the proficiency of Governance Professionals
+# The Compentency Framework 
+
+This was a web application created within their website to assess the proficiency level of Governance Professionals.
+
+<hr />
 
 **Note:** I was unable to retrieve the original files containing the full structure and sass components. <br />
 The code within these files are what was retrieved from the website directly.
