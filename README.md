@@ -2,7 +2,6 @@
 
 This was a web application created within their website to assess the proficiency level of Governance Professionals.
 
-&nbsp;
 
 ### Tools
 - JavaScript
