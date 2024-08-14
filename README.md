@@ -2,7 +2,8 @@
 
 This was a web application created within their website to assess the proficiency level of Governance Professionals.
 
-<hr />
+&nbsp;
+&nbsp;
 
 **Note:** I was unable to retrieve the original files containing the full structure and sass components. <br />
 The code within these files are what was retrieved from the website directly.
