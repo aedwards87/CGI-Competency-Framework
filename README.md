@@ -4,7 +4,7 @@
 The code within these files are what was retrieved from the website directly.
 
 
-### Tools
+### <u>Tools</u>
 - JavaScript
 - SASS / CSS
 - HTML
@@ -14,7 +14,7 @@ The code within these files are what was retrieved from the website directly.
 ### Link
 [CGIUKI Competency Framework](https://www.cgi.org.uk/professional-development/competency-framework)
 
-%SPACE 
+&nbsp;
 
 ![Screenshot 2024-07-07 221427](https://github.com/aedwards87/CGI-Competency-Framework/assets/46580915/96036901-dfa8-484e-869d-1fc729c38f70)
 
