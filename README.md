@@ -3,11 +3,6 @@
 This was a web application created within their website to assess the proficiency level of Governance Professionals.
 
 &nbsp;
-&nbsp;
-
-**Note:** I was unable to retrieve the original files containing the full structure and sass components. <br />
-The code within these files are what was retrieved from the website directly.
-
 
 ### Tools
 - JavaScript
@@ -18,6 +13,11 @@ The code within these files are what was retrieved from the website directly.
 
 ### Link
 [CGIUKI Competency Framework](https://www.cgi.org.uk/professional-development/competency-framework)
+
+&nbsp;
+
+**Note:** I was unable to retrieve the original files containing the full structure and sass components. <br />
+The code within these files are what was retrieved from the website directly.
 
 &nbsp;
 
