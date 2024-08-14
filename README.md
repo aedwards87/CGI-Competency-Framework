@@ -1,10 +1,10 @@
 # The Compentency Framework Web Application to access the proficiency of Governance Professionals
 
-**Note:** I was unable to retrieve the original files containing the full structure and sass components. 
+**Note:** I was unable to retrieve the original files containing the full structure and sass components. <br />
 The code within these files are what was retrieved from the website directly.
 
 
-### <u>Tools</u>
+### Tools
 - JavaScript
 - SASS / CSS
 - HTML
